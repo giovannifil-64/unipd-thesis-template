@@ -1,8 +1,8 @@
 # Template Tesi UNIPD
 
 <p align="center">
-  <img width="250" src="rsc/logo_unipd_white.png#gh-dark-mode-only">
-  <img width="250" src="rsc/logo_unipd.png#gh-light-mode-only">
+  <img width="175" src="rsc/logo_unipd_white.png#gh-dark-mode-only">
+  <img width="175" src="rsc/logo_unipd.png#gh-light-mode-only">
 </p>
 
 </br>
@@ -37,6 +37,35 @@ Questo template può essere utilizzato sia in locale, come ad esempio con TeXSho
 Una volta installata la distribuzione TeX, è necessario installare anche [latexmk](https://mg.readthedocs.io/latexmk.html), un tool che permette di compilare il documento in maniera automatica.
 
 Successivamente, è possibile compilare il documento tramite il comando `latexmk -pdf thesis.tex`.
+
+## PDF/A
+
+Il template è predisposto per la generazione di un PDF/A. Si consiglia di usare **sempre** jpeg pre le immagini, in modo da non avere problemi di trasparenza.
+
+Al momento sono presenti due warning:
+- **Specification: ISO 19005-1:2005, Clause: 6.8.3.3, Test number: 1**
+    - The logical structure of the conforming file shall be described by a structure hierarchy rooted in the StructTreeRoot entry of the document catalog dictionary, as described in PDF Reference 9.6	Failed
+      
+      1 occurrences
+      
+      _PDDocument_
+      
+      _StructTreeRoot_size == 1_
+      
+      _root/document[0]_
+
+- **Specification: ISO 19005-1:2005, Clause: 6.8.2.2, Test number: 1**
+    - The document catalog dictionary shall include a MarkInfo dictionary with a Marked entry in it, whose value shall be true.	Failed
+
+      1 occurrences
+      
+      _CosDocument_
+      
+      _Marked == true_
+      
+      _root_
+
+Non appena si trova una soluzione, verrà aggiornata la repository con il fix.
 
 ## Licenza
 
