@@ -36,37 +36,37 @@ files
 
 Questi sono i documenti più importanti:
 
-- `appendix/`: contains the last chapters, such as custom appendix chapters, bibliography and glossary.
-    - `bibliography.bib`: where you put actual bibliography content.
-    - `bibliography.tex`: the automatic structure of bibliography. No need to change anything here
-    - `glossary-entries.tex:` where you put your glossary definitions, following the syntax of the example terms.
+- `appendice/`: contiene gli ultimi capitoli, come i capitoli di appendice personalizzati, la bibliografia e il glossario.
+    - `bibliography.bib`: dove si inserisce il contenuto effettivo della bibliografia.
+    - `bibliografia.tex`: la struttura automatica della bibliografia. Non è necessario modificare nulla qui
+    - `glossary-entries.tex:` dove si inseriscono le definizioni del glossario, seguendo la sintassi dei termini di esempio.
 - `config/`
-    - `variables.tex`: the first file you want to look into.
-    It defines all the variables that will be used to automatically fill some contents of the document, such as the title, your name, your professor etc.
-    It also fills the final PDF file metadata fields.
-    - `thesis-config.tex`: some custom commands definitions and package-specific configurations.
-    If you feel adventurous enough you can tune them to your preferences, but the provided ones should be ok.
-    - `packages.tex`: should be pretty much self-explanatory.
-    Just the declaration of all the packages used in the project.
-    Nothing relevant to see here.
-- `img/`: all the images you want to include in your thesis should be placed here.
-- `preface/`: all those pages you find before the actual chapters are gathered here:
-    - `1_title-page`: declares the structure of the front page.
-        Everything is automatic and the various names, such as your name, you thesis title, your professor etc get filled from those variables you set in `config/variables.tex`.
-    - `2_copyright.tex`: it's nothing special, just that blank page with copyright.
-    - `3_acknowledgements.tex`: should be clear by itself. Just remember to thank your professor first
-    - `4_abstract.tex`: in here you briefly explain what the thesis is about.
-    You shouldn't spend much effort on this, just look at what's already in there and adapt it to your experience.
-    - `5_table-of-contents`: generates the table of contents. Nothing to see here.
-- `chapters/`: the real stuff is placed here.
-This is the directory you will spend most of your time in, writing the main content.
-You will already find some example chapters in there, which are meant to show you how to use the template and to give an example of the structure of a thesis. \
-Use file names that reflect the content of the chapter, avoid calling them `chapter-03.tex`.
+    - `variables.tex`: è il primo file da consultare.
+    Definisce tutte le variabili che verranno utilizzate per riempire automaticamente alcuni contenuti del documento, come il titolo, il vostro nome, il vostro professore, ecc.
+    Compila anche i campi dei metadati del file PDF finale.
+    - `thesis-config.tex`: alcune definizioni di comandi personalizzati e configurazioni specifiche del pacchetto.
+    Se ci si sente abbastanza avventurosi, si possono adattare alle proprie preferenze, ma quelle fornite dovrebbero andare bene.
+    - `packages.tex`: dovrebbe essere abbastanza autoesplicativo.
+    È solo la dichiarazione di tutti i pacchetti usati nel progetto.
+    Non c'è nulla di rilevante da vedere qui.
+- `img/`: tutte le immagini che si vogliono includere nella tesi dovrebbero essere inserite qui.
+- `preface/`: tutte le pagine che si trovano prima dei capitoli veri e propri sono raccolte qui:
+    - `1_title-page`: dichiara la struttura della prima pagina.
+        Tutto è automatico e i vari nomi, come il vostro nome, il titolo della tesi, il vostro professore ecc. vengono riempiti dalle variabili impostate in `config/variables.tex`.
+    - `2_copyright.tex`: non è niente di speciale, solo una pagina vuota con il copyright.
+    - `3_riconoscimenti.tex`: dovrebbe essere chiaro da solo. Ricordatevi solo di ringraziare prima il vostro professore
+    - `4_abstract.tex`: qui si spiega brevemente di cosa tratta la tesi.
+    Non si dovrebbe spendere molto per questo, basta guardare a quello che c'è già e adattarlo alla propria esperienza.
+    - `5_table-of-contents`: genera l'indice dei contenuti. Non c'è niente da vedere qui.
+- `capitoli/`: qui si trova il materiale vero e proprio.
+Questa è la cartella in cui si passerà la maggior parte del tempo, scrivendo il contenuto principale.
+Vi si trovano già alcuni capitoli di esempio, che hanno lo scopo di mostrare come usare il modello e di dare un esempio della struttura di una tesi. \
+Utilizzate nomi di file che riflettano il contenuto del capitolo, evitando di chiamarli `capitolo-03.tex`.
 > [!IMPORTANT]
-> When creating, deleting or editing chapters remember that you have to put them in `structure.tex` too
-- `latexmkrc`: configuration file for latexmk, the tool used to compile the document. You shouldn't need to change anything here.
-- `output.xmpdata`: It contains the metadata of the thesis, such as title, author, keywords etc. You should change it accordingly to your thesis, it down not accept the values from the variables defined in `config/variables.tex`.
-- `thesis.tex`: the root file of your thesis. As you can read above it is the only file to compile, in order to get the final PDF.
+> Quando si creano, si cancellano o si modificano i capitoli, ricordarsi che è necessario inserirli anche in `struttura.tex
+- `latexmkrc`: file di configurazione per latexmk, lo strumento usato per compilare il documento. Non dovrebbe essere necessario modificare nulla qui.
+- `output.xmpdata`: Contiene i metadati della tesi, come titolo, autore, parole chiave ecc. Dovete modificarlo in base alla vostra tesi, non accetta i valori delle variabili definite in `config/variables.tex`.
+- `thesis.tex`: il file principale della tesi. Come si può leggere sopra, è l'unico file da compilare per ottenere il PDF finale.
 
-You can customize the template to whatever you want, changing the order of the chapters, adding new ones, removing some of them etc.
-Just remember to keep the structure of the document clean and consistent.
+È possibile personalizzare il modello in base alle proprie esigenze, cambiando l'ordine dei capitoli, aggiungendone di nuovi, rimuovendone alcuni, ecc.
+Ricordate solo di mantenere la struttura del documento pulita e coerente.

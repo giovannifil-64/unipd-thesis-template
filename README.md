@@ -16,19 +16,22 @@ Template realizzato per la stesura della tesi di laurea triennale d'Informatica 
 > Questo template è pensato per il corso di laurea trinenale in Informatica, ma nulla vieta di utilizzarlo, con oppurtune modifiche, per altri corsi di laurea.
 
 > [!WARNING]
-> Si può contribuire al miglioramento costante del template, segnalando eventuali errori o suggerendo modifiche, tramite l'apertura di una issue e/o pull request, ma si prega di non caricare direttaente il template contenete i file generati dalla compilazione o il template contenente la vosra tesi. Eseguite un fork e lavorate da li.
+> Si può contribuire al miglioramento costante del template, segnalando eventuali errori o suggerendo modifiche, tramite l'apertura di una issue e/o pull request, ma si prega di non caricare direttaente il template contenete i file generati dalla compilazione o contenente la vosra tesi. Eseguite un fork e lavorate da li.
 
 Rispetto alla versione originale, sono state apportate alcune modifiche, tra cui:
-- Rimosse le appendici
+- Aggiunto un interlinea di 1.5 per rendere più leggibile il documento
+- Migliorata la rappresentazione grafica del documento
+- Sistemati alcuni problemi con la generazione del PDF/A
 - Piccole migliorie al frontespizio
-- Migliorata la struttura del documento
-- Aggiunto un interlinea di 1.5
-- Migliorati alcuni aspetti grafici, come la visualizzazione del PDF generato
+- Semplificata la struttura del documento
 - Semplificata la gestione della bibliografia
+- Ordinati i file della prefazione per numero di apparizione
+- Rimossi i tag per la generazione di un PDF per la stampa
 - Rimossi alcuni pacchetti non necessari
+- Rimosse le appendici
 
 ## Utilizzo
-Questo template può essere utilizzato sia in locale, come ad esempio con TeXShop, VSCode eTeXstudio, che online su Overleaf.
+Questo template può essere utilizzato sia in locale, come ad esempio con TeXShop, VSCode e TeXstudio, che online su Overleaf.
 
 È altresì possibile utilizzare il template con un qualsiasi editor di testo, ma in questo caso è necessario installare una distribuzione TeX, come ad esempio [TeX Live](https://www.tug.org/texlive/).
 
