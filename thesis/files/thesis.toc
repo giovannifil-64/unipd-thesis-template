@@ -1,0 +1,35 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduzione}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}L'azienda}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}L'idea}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Organizzazione del testo}{3}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Processi e metodologie}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Processo sviluppo prodotto}{6}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Descrizione dello stage}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduzione al progetto}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Analisi preventiva dei rischi}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Requisiti e obiettivi}{8}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Pianificazione}{8}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Ipsum}{8}{subsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.1.1}Sit}{8}{subsubsection.3.4.1.1}%
+\contentsline {paragraph}{\numberline {3.4.1.1.1}Memento}{8}{paragraph.3.4.1.1.1}%
+\contentsline {chapter}{\numberline {4}Analisi dei requisiti}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Casi d'uso}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Casi d'uso}{10}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Tracciamento dei requisiti}{10}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Tabelle dei requisiti}{11}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Progettazione e codifica}{12}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Tecnologie e strumenti}{12}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Ciclo di vita del software}{12}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Progettazione}{12}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Namespace 1}{12}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Design Pattern utilizzati}{13}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Codifica}{13}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Verifica e validazione}{14}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusioni}{16}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Consuntivo finale}{16}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{16}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Conoscenze acquisite}{16}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Valutazione personale}{16}{section.7.4}%
+\contentsline {chapter}{Bibliografia}{17}{appendix*.20}%

@@ -1,0 +1,100 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{article:spooky}{article}{}
+      \name{author}{3}{}{%
+        {{hash=3ebf53e52a3ce84f0ffb8553200a6a63}{%
+           family={Einstein},
+           familyi={E\bibinitperiod},
+           given={Albert},
+           giveni={A\bibinitperiod}}}%
+        {{hash=19dc919856626ef90dab285f889c3b78}{%
+           family={Podolsky},
+           familyi={P\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod}}}%
+        {{hash=fc8bb495c63cdab3ba6923db2097e4c7}{%
+           family={Rosen},
+           familyi={R\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{d7a7dfe41768036d77a53afecb936f4e}
+      \strng{fullhash}{d7a7dfe41768036d77a53afecb936f4e}
+      \strng{bibnamehash}{d7a7dfe41768036d77a53afecb936f4e}
+      \strng{authorbibnamehash}{d7a7dfe41768036d77a53afecb936f4e}
+      \strng{authornamehash}{d7a7dfe41768036d77a53afecb936f4e}
+      \strng{authorfullhash}{d7a7dfe41768036d77a53afecb936f4e}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Physical Review}
+      \field{number}{10}
+      \field{title}{Can Quantum-Mechanical Description of Physical Reality be Considered Complete?}
+      \field{volume}{47}
+      \field{year}{1935}
+      \field{pages}{777\bibrangedash 780}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1103/PhysRev.47.777
+      \endverb
+    \endentry
+    \entry{womak:lean-thinking}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e476de67e57454852ad240f1ba5e23ca}{%
+           family={James\bibnamedelimb P.\bibnamedelimi Womack},
+           familyi={J\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim W\bibinitperiod},
+           given={Daniel\bibnamedelimb T.\bibnamedelimi Jones},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Simon \& Schuster, Inc.}%
+      }
+      \strng{namehash}{e476de67e57454852ad240f1ba5e23ca}
+      \strng{fullhash}{e476de67e57454852ad240f1ba5e23ca}
+      \strng{bibnamehash}{e476de67e57454852ad240f1ba5e23ca}
+      \strng{authorbibnamehash}{e476de67e57454852ad240f1ba5e23ca}
+      \strng{authornamehash}{e476de67e57454852ad240f1ba5e23ca}
+      \strng{authorfullhash}{e476de67e57454852ad240f1ba5e23ca}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lean Thinking, Second Editon}
+      \field{year}{2010}
+    \endentry
+    \entry{site:agile-manifesto}{online}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labeltitlesource}{title}
+      \field{title}{Manifesto Agile}
+      \verb{urlraw}
+      \verb http://agilemanifesto.org/iso/it/
+      \endverb
+      \verb{url}
+      \verb http://agilemanifesto.org/iso/it/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

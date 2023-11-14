@@ -1,3 +1,4 @@
+% chktex-file 1
 \documentclass[
     10pt,
     oneside,   % symmetric pagination, for digital view
@@ -40,4 +41,11 @@
     \appendix
     \backmatter
     \input{appendix/bibliography}
+
+    \appendix
+    \input{appendix/glossary-entries.tex}
+
+    \backmatter
+    \printglossary[type=\acronymtype, title=Acronimi e abbreviazioni, toctitle=Acronimi e abbreviazioni]
+    \printglossary[type=main, title=Glossario, toctitle=Glossario]
 \end{document}
