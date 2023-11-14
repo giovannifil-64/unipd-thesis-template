@@ -1,0 +1,43 @@
+\documentclass[
+    10pt,
+    oneside,   % symmetric pagination, for digital view
+    a4paper,
+    %english,
+    italian
+]{book}
+
+\input{config/packages}
+\input{config/thesis-config}
+
+\date{}
+
+\hypersetup{pdfstartview=}
+\begin{document}
+    %\layout
+    
+    \frontmatter
+    \input{preface/1_title-page}
+    \input{preface/2_copyright}
+    \input{preface/3_acknowledgements}
+    \input{preface/4_abstract}
+    \input{preface/5_table-of-contents}
+
+    \backmatter
+    \printglossary[type=\acronymtype, title=Acronimi e abbreviazioni, toctitle=Acronimi e abbreviazioni]
+    \printglossary[type=main, title=Glossario, toctitle=Glossario]
+    
+    \cleardoublepage
+
+    \mainmatter
+    \input{chapters/1_introduction}
+    \input{chapters/2_processes}
+    \input{chapters/3_stage_desc}
+    \input{chapters/4_requirement_analysis}
+    \input{chapters/5_design_coding}
+    \input{chapters/6_verify_validate}
+    \input{chapters/7_conclusions}
+
+    \appendix
+    \backmatter
+    \input{appendix/bibliography}
+\end{document}

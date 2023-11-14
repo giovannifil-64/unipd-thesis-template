@@ -1,0 +1,164 @@
+% Load variables
+\input{config/variables}
+\input{appendix/glossary-entries}
+\makeglossaries
+
+\bibliography{appendix/bibliography}
+
+\defbibheading{bibliography} {
+    \cleardoublepage
+    \phantomsection
+    \addcontentsline{toc}{chapter}{\bibname}
+    \chapter*{\bibname\markboth{\bibname}{\bibname}}
+}
+
+%Improvements the paragraph command
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+% Custom hyphenation rules
+\hyphenation {
+    e-sem-pio
+    ex-am-ple
+}
+
+% Images path
+\graphicspath{{img/}}
+
+% Force page color, as some editors set a grayish color as default
+\pagecolor{white}
+
+%Define custom colors
+% \definecolor{lavenderindigo}{rgb}{0.58, 0.34, 0.92}
+\definecolor{hyperColor}{HTML}{0041EB}
+
+\captionsetup{
+    tableposition=top,
+    figureposition=bottom,
+    font=small,
+    format=hang,
+    labelfont=bf
+}
+
+\hypersetup{
+    %hyperfootnotes=false,
+    %pdfpagelabels,
+    colorlinks=true,
+    linktocpage=true,
+    pdfstartpage=1,
+    pdfstartview=,
+    breaklinks=true,
+    pdfpagemode=UseNone,
+    pageanchor=true,
+    pdfpagemode=UseOutlines,
+    plainpages=false,
+    bookmarksnumbered,
+    bookmarksopen=true,
+    bookmarksopenlevel=1,
+    hypertexnames=true,
+    pdfhighlight=/O,
+    %nesting=true,
+    %frenchlinks,
+    %urlcolor=lavenderindigo,
+    %linkcolor=blue,
+    %citecolor=webgreen,
+    %pagecolor=blue,
+    allcolors = hyperColor,
+}
+
+% Delete all links and show them in black, useful for printing
+% \hypersetup{draft}
+
+% Listings setup
+\lstset{
+    language=[LaTeX]Tex,%C++,
+    keywordstyle=\color{RoyalBlue}, %\bfseries,
+    basicstyle=\small\ttfamily,
+    %identifierstyle=\color{NavyBlue},
+    commentstyle=\color{Green}\ttfamily,
+    stringstyle=\rmfamily,
+    numbers=none, %left,%
+    numberstyle=\scriptsize, %\tiny
+    stepnumber=5,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frameround=ftff,
+    frame=single
+}
+
+\newcommand{\sectionname}{sezione}
+\addto\captionsitalian{\renewcommand{\figurename}{Figura}
+                       \renewcommand{\tablename}{Tabella}}
+
+\newcommand{\glsfirstoccur}{\ap{{[g]}}}
+
+\newcommand{\intro}[1]{\emph{\textsf{#1}}}
+
+% Risks environment
+\newcounter{riskcounter} % define a counter
+\setcounter{riskcounter}{0} % set the counter to some initial value
+%%%% Parameters
+% #1: Title
+\newenvironment{risk}[1]{
+    \refstepcounter{riskcounter} % increment counter
+    \par \noindent % start new paragraph
+    \textbf{\arabic{riskcounter}. #1} % display the title before the content of the environment is displayed
+}{
+    \par\medskip
+}
+
+\newcommand{\riskname}{Rischio}
+\newcommand{\riskdescription}[1]{\textbf{\\Descrizione:} #1.}
+\newcommand{\risksolution}[1]{\textbf{\\Soluzione:} #1.}
+
+% Use case environment
+\newcounter{usecasecounter} % define a counter
+\setcounter{usecasecounter}{0} % set the counter to some initial value
+
+%%%% Parameters
+% #1: ID
+% #2: Nome
+\newenvironment{usecase}[2]{
+    \renewcommand{\theusecasecounter}{\usecasename #1}  % this is where the display of the counter is overwritten/modified
+    \refstepcounter{usecasecounter} % increment counter
+    \vspace{10pt}
+    \par \noindent % start new paragraph
+    {\large \textbf{\usecasename #1: #2}} % display the title before the content of the environment is displayed
+    \medskip
+}{
+    \medskip
+}
+\newcommand{\usecasename}{UC}
+\newcommand{\usecaseactors}[1]{\textbf{\\Attori Principali:} #1. \vspace{4pt}}
+\newcommand{\usecasepre}[1]{\textbf{\\Precondizioni:} #1. \vspace{4pt}}
+\newcommand{\usecasedesc}[1]{\textbf{\\Descrizione:} #1. \vspace{4pt}}
+\newcommand{\usecasepost}[1]{\textbf{\\Postcondizioni:} #1. \vspace{4pt}}
+\newcommand{\usecasealt}[1]{\textbf{\\Scenario Alternativo:} #1. \vspace{4pt}}
+
+% Namespace description environment
+\newenvironment{namespacedesc}{
+    \vspace{10pt}
+    \par \noindent  % start new paragraph
+    \begin{description}
+}{
+    \end{description}
+    \medskip
+}
+
+\newcommand{\classdesc}[2]{\item[\textbf{#1:}] #2}
+
+%\linespread{1.25}
+\setstretch{1.5}
+
+%\hypersetup{pdfstartview=} commentato il 9/11/23
+
+\newcommand{\textbfit}[1]{\textbf{\textit{#1}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+% \fancyhead[R]{\thepage} %For plading the page numer on the top right
+\fancyfoot[C]{\thepage} %For plading the page numer on the bottom of the page

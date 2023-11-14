@@ -1,0 +1,30 @@
+\cleardoublepage
+\pdfbookmark{\contentsname}{tableofcontents}
+\setcounter{secnumdepth}{5}  % Numbering depth for sections
+\setcounter{tocdepth}{5}     % Depth of entries in the table of contents
+
+\tableofcontents
+%\markboth{\contentsname}{\contentsname}
+\clearpage
+
+\begingroup
+    \let\clearpage\relax
+    \let\cleardoublepage\relax
+    \let\cleardoublepage\relax
+
+    % Figures list
+    \phantomsection
+    \pdfbookmark{\listfigurename}{lof}
+    \listoffigures
+
+    \vspace*{8ex}
+
+    % Tables list
+    \phantomsection
+    \pdfbookmark{\listtablename}{lot}
+    \listoftables
+
+    \vspace*{8ex}
+\endgroup
+
+\cleardoublepage
