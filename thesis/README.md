@@ -1,6 +1,7 @@
 # Struttura del template
 
 Il template è strutturato nel seguente modo:
+```
 files
 ├── appendix/
 │   ├── bibliography.bib
