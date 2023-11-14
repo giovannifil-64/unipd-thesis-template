@@ -58,12 +58,12 @@ Questi sono i documenti più importanti:
     - `4_abstract.tex`: qui si spiega brevemente di cosa tratta la tesi.
     Non si dovrebbe spendere molto per questo, basta guardare a quello che c'è già e adattarlo alla propria esperienza.
     - `5_table-of-contents`: genera l'indice dei contenuti. Non c'è niente da vedere qui.
-- `capitoli/`: qui si trova il materiale vero e proprio.
+- `chapters/`: qui si trova il materiale vero e proprio.
 Questa è la cartella in cui si passerà la maggior parte del tempo, scrivendo il contenuto principale.
 Vi si trovano già alcuni capitoli di esempio, che hanno lo scopo di mostrare come usare il modello e di dare un esempio della struttura di una tesi. \
 Utilizzate nomi di file che riflettano il contenuto del capitolo, evitando di chiamarli `capitolo-03.tex`.
 > [!IMPORTANT]
-> Quando si creano, si cancellano o si modificano i capitoli, ricordarsi che è necessario inserirli anche in `struttura.tex
+> Quando si creano, si cancellano o si modificano i capitoli, ricordarsi che è necessario aggiornarli anche in `thesis.tex`
 - `latexmkrc`: file di configurazione per latexmk, lo strumento usato per compilare il documento. Non dovrebbe essere necessario modificare nulla qui.
 - `output.xmpdata`: Contiene i metadati della tesi, come titolo, autore, parole chiave ecc. Dovete modificarlo in base alla vostra tesi, non accetta i valori delle variabili definite in `config/variables.tex`.
 - `thesis.tex`: il file principale della tesi. Come si può leggere sopra, è l'unico file da compilare per ottenere il PDF finale.
