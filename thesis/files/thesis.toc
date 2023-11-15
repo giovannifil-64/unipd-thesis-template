@@ -1,5 +1,7 @@
 \babel@toc {italian}{}\relax 
 \babel@toc {italian}{}\relax 
+\contentsline {chapter}{Acronimi e abbreviazioni}{vii}{section*.12}%
+\contentsline {chapter}{Glossario}{viii}{section*.14}%
 \contentsline {chapter}{\numberline {1}Introduzione}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}L'azienda}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}L'idea}{2}{section.1.2}%
@@ -32,4 +34,4 @@
 \contentsline {section}{\numberline {7.2}Raggiungimento degli obiettivi}{16}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Conoscenze acquisite}{16}{section.7.3}%
 \contentsline {section}{\numberline {7.4}Valutazione personale}{16}{section.7.4}%
-\contentsline {chapter}{Bibliografia}{17}{appendix*.20}%
+\contentsline {chapter}{Bibliografia}{17}{appendix*.24}%
