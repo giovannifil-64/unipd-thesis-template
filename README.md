@@ -8,7 +8,7 @@
 </br>
 
 > [!IMPORTANT]
-> Questo template è stato realizzato partendo da quello reso disponibile dal grupo FIUP all'interno del suo repository GitHub [Thesis-template](https://github.com/FIUP/Thesis-template).
+> Questo template è stato realizzato partendo da quello reso disponibile dal gruppo FIUP all'interno del suo repository GitHub [Thesis-template](https://github.com/FIUP/Thesis-template).
 
 > [!NOTE]
 > Questo template è pensato per il corso di laurea trinenale in Informatica, ma nulla vieta di utilizzarlo, con oppurtune modifiche, per altri corsi di laurea.
@@ -20,19 +20,17 @@
 > ``` pdflatex thesis.tex ```
 > ``` makeglossaries thesis ```
 
-> [!TIP]
-- Inserire almeno un termine citato(e.g. \cite{site:scrum})
-
+> [!WARNING]
+> - Inserire almeno un termine citato(e.g. \cite{site:scrum})
 > Se il termine appare ed è stato cancellato:
-- la bibliografia viene compilata dai file .bbl (ma anche .bcf volendo) all'interno di "\build" (cartella build creata in automatico)
-
+> - la bibliografia viene compilata dai file .bbl (ma anche .bcf volendo) all'interno di "\build" (cartella build creata in automatico)
 > Nell'ordine:
-1) sarà sufficiente cancellare i suddetti file (.bbl e .bcf all'interno di build) per vedere effettivamente la modifica compiersi
-    - dovrebbe essere sufficiente cancellare solo il .bbl
-    - nel caso si può anche cancellare il .bcf
-2) fare una modifica minimale (es. spaziare un carattere) all'interno della tesi (non dentro bibliography.bib)
-3) aspettare la ricompilazione del file (sarà un po' più lunga del solito, fa la build completa)
+> 1) sarà sufficiente cancellare i suddetti file (.bbl e .bcf all'interno di build) per vedere effettivamente la modifica compiersi
+>    - dovrebbe essere sufficiente cancellare solo il .bbl
+>    - nel caso si può anche cancellare il .bcf
+> 2) fare una modifica minimale (es. spaziare un carattere) all'interno della tesi (non dentro bibliography.bib)
+> 3) aspettare la ricompilazione del file (sarà un po' più lunga del solito, fa la build completa)
 
 > Nota di margine:
-- Non sono indispensabili gli ``` addtocategory ``` in thesis-config.tex/tesi-config.tex
+> - Non sono indispensabili gli ``` addtocategory ``` in thesis-config.tex/tesi-config.tex
 
