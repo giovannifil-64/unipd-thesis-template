@@ -30,7 +30,6 @@
 >    - nel caso si può anche cancellare il .bcf
 > 2) fare una modifica minimale (es. spaziare un carattere) all'interno della tesi (non dentro bibliography.bib)
 > 3) aspettare la ricompilazione del file (sarà un po' più lunga del solito, fa la build completa)
-
 > Nota di margine:
 > - Non sono indispensabili gli ``` addtocategory ``` in thesis-config.tex/tesi-config.tex
 
