@@ -14,11 +14,11 @@
 > Questo template è pensato per il corso di laurea trinenale in Informatica, ma nulla vieta di utilizzarlo, con oppurtune modifiche, per altri corsi di laurea.
 
 > [!TIP]
-> Per far apparire il glossario, occorre citare almeno un termine con ```\gls{termine}```
-> Il termine con |g| di glossario appare invece con  ```\glsfirstoccur{\gls{termine}}```
-> Se non andasse, oltre ad alcuni accorgimenti qui adottati, eseguire:
-> ``` pdflatex thesis.tex ```
-> ``` makeglossaries thesis ```
+> - Per far apparire il glossario, occorre citare almeno un termine con ```\gls{termine}```
+> - Il termine con |g| di glossario appare invece con  ```\glsfirstoccur{\gls{termine}}```
+> - Se non andasse, oltre ad alcuni accorgimenti qui adottati, eseguire:
+> 1) ``` pdflatex thesis.tex ```
+> 2) ``` makeglossaries thesis ```
 
 > [!WARNING]
 > - Inserire almeno un termine citato(e.g. \cite{site:scrum})
