@@ -16,10 +16,9 @@
 > [!TIP]
 > Per far apparire il glossario, occorre citare almeno un termine con ```\gls{termine}```
 > Il termine con |g| di glossario appare invece con  ```\glsfirstoccur{\gls{termine}}```
-
 > Se non andasse, oltre ad alcuni accorgimenti qui adottati, eseguire:
-``` pdflatex thesis.tex ```
-``` makeglossaries thesis ```
+> ``` pdflatex thesis.tex ```
+> ``` makeglossaries thesis ```
 
 > [!TIP]
 - Inserire almeno un termine citato(e.g. \cite{site:scrum})
