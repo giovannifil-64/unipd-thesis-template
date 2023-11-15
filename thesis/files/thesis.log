@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  15 NOV 2023 21:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.17)  15 NOV 2023 21:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1216,7 +1216,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ] (./chapters/1_introduction.tex
 Capitolo 1.
-<img/quantum_entanglement.png, id=192, 4215.75pt x 1053.9375pt>
+<img/quantum_entanglement.png, id=194, 4215.75pt x 1053.9375pt>
 File: img/quantum_entanglement.png Graphic file (type png)
 <use img/quantum_entanglement.png>
 Package pdftex.def Info: img/quantum_entanglement.png  used on input line 11.
@@ -1235,7 +1235,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
  <./img/quantum_entanglement.png (PNG copy)>] [2] [3]) (./chapters/2_processes.tex [4]
 Capitolo 2.
-<img/qubit.png, id=239, 1806.75pt x 1053.9375pt>
+<img/qubit.png, id=241, 1806.75pt x 1053.9375pt>
 File: img/qubit.png Graphic file (type png)
 <use img/qubit.png>
 Package pdftex.def Info: img/qubit.png  used on input line 12.
@@ -1244,7 +1244,7 @@ Package pdftex.def Info: img/qubit.png  used on input line 12.
 
  <./img/qubit.png (PNG copy)>]) (./chapters/3_stage_desc.tex [6]
 Capitolo 3.
-<img//pk_estate.jpg, id=249, 2168.1pt x 2038.61626pt>
+<img//pk_estate.jpg, id=251, 2168.1pt x 2038.61626pt>
 File: img//pk_estate.jpg Graphic file (type jpg)
 <use img//pk_estate.jpg>
 Package pdftex.def Info: img//pk_estate.jpg  used on input line 12.
@@ -1253,7 +1253,7 @@ Package pdftex.def Info: img//pk_estate.jpg  used on input line 12.
 
  <./img//pk_estate.jpg>]) (./chapters/4_requirement_analysis.tex [8]
 Capitolo 4.
-<img//usecase/scenario-principale.png, id=260, 463.13025pt x 236.082pt>
+<img//usecase/scenario-principale.png, id=262, 463.13025pt x 236.082pt>
 File: img//usecase/scenario-principale.png Graphic file (type png)
 <use img//usecase/scenario-principale.png>
 Package pdftex.def Info: img//usecase/scenario-principale.png  used on input line 15.
@@ -1266,7 +1266,7 @@ Capitolo 5.
 
 ]) (./chapters/6_verify_validate.tex [13]
 Capitolo 6.
-<img/quantum_superposition.png, id=290, 4215.75pt x 1053.9375pt>
+<img/quantum_superposition.png, id=292, 4215.75pt x 1053.9375pt>
 File: img/quantum_superposition.png Graphic file (type png)
 <use img/quantum_superposition.png>
 Package pdftex.def Info: img/quantum_superposition.png  used on input line 9.
@@ -1323,9 +1323,9 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmro12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on thesis.pdf (26 pages, 2803871 bytes).
+Output written on thesis.pdf (26 pages, 2804227 bytes).
 PDF statistics:
- 538 PDF objects out of 1000 (max. 8388607)
+ 540 PDF objects out of 1000 (max. 8388607)
  106 named destinations out of 1000 (max. 500000)
  375 words of extra memory for PDF output out of 10000 (max. 10000000)
 
