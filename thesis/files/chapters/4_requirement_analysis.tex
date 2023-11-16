@@ -1,16 +1,17 @@
 \chapter{Analisi dei requisiti}
-\label{cap:analisi-requisiti}
+\label{chap:analisi-requisiti}
 
 \section{Casi d'uso}
 
 Per lo studio dei casi di utilizzo del prodotto sono stati creati dei diagrammi.
-I diagrammi dei casi d'uso (in inglese \emph{Use Case Diagram}) sono diagrammi di tipo \gls{uml} dedicati alla descrizione delle funzioni o servizi offerti da un sistema, così come sono percepiti e utilizzati dagli attori che interagiscono col sistema stesso.
+I diagrammi dei casi d'uso (in inglese \emph{Use Case Diagram}) sono diagrammi di tipo \gls{umlg} dedicati alla descrizione delle funzioni o servizi offerti da un sistema, così come sono percepiti e utilizzati dagli attori che interagiscono col sistema stesso.
 Essendo il progetto finalizzato alla creazione di un tool per l'automazione di un processo, le interazioni da parte dell'utilizzatore devono essere ovviamente ridotte allo stretto necessario. Per questo motivo i diagrammi d'uso risultano semplici e in numero ridotto.
 
 \begin{figure}[ht] 
     \centering 
     \includegraphics[width=0.7\columnwidth]{usecase/scenario-principale.jpeg} 
     \caption{Use Case - UC0: Scenario principale}
+    \label{fig:scenario_principale}
 \end{figure}
 
 \begin{usecase}{0}{Scenario principale}
@@ -18,7 +19,7 @@ Essendo il progetto finalizzato alla creazione di un tool per l'automazione di u
     \usecasepre{Lo sviluppatore è entrato nel plug-in di simulazione all'interno dell'IDE}
     \usecasedesc{La finestra di simulazione mette a disposizione i comandi per configurare, registrare o eseguire un test}
     \usecasepost{Il sistema è pronto per permettere una nuova interazione}
-\label{uc:scenario-principale}
+    \label{uc:scenario_principale}
 \end{usecase}
 
 \section{Casi d'uso}
@@ -28,6 +29,7 @@ Essendo il progetto finalizzato alla creazione di un tool per l'automazione di u
     \usecasedesc{L'utente può gestire le informazioni del proprio profilo.}
     \usecasepost{Le modifiche vengono salvate nel sistema.}
     \usecasealt{Se l'utente non è autenticato, visualizza un messaggio di errore.}
+    \label{uc:gestione_utente}
 \end{usecase}
 
 \begin{usecase}{2}{Creazione Prodotto}
@@ -36,6 +38,7 @@ Essendo il progetto finalizzato alla creazione di un tool per l'automazione di u
     \usecasedesc{L'amministratore può aggiungere un nuovo prodotto al catalogo.}
     \usecasepost{Il nuovo prodotto viene aggiunto con successo.}
     \usecasealt{Se i campi obbligatori non sono compilati, visualizza un messaggio di errore.}
+    \label{uc:creazione_prodotto}
 \end{usecase}
 
 \section{Tracciamento dei requisiti}
