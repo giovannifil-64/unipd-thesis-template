@@ -35,6 +35,26 @@ Questo template può essere utilizzato sia in locale, come ad esempio con TeXSho
 
 È altresì possibile utilizzare il template con un qualsiasi editor di testo, ma in questo caso è necessario installare una distribuzione TeX, come ad esempio [TeX Live](https://www.tug.org/texlive/).
 
+> [!TIP]
+> - Per far apparire il glossario, occorre citare almeno un termine con ```\gls{termine}```
+> - Il termine con |g| di glossario appare invece con  ```\glsfirstoccur{\gls{termine}}```
+> - Se non andasse, oltre ad alcuni accorgimenti qui adottati, eseguire:
+> 1) ``` pdflatex thesis.tex ```
+> 2) ``` makeglossaries thesis ```
+
+> [!WARNING]
+> - Inserire almeno un termine citato(e.g. \cite{site:scrum})
+> Se il termine appare ed è stato cancellato:
+> - la bibliografia viene compilata dai file .bbl (ma anche .bcf volendo) all'interno di "\build" (cartella build creata in automatico)
+> Nell'ordine:
+> 1) sarà sufficiente cancellare i suddetti file (.bbl e .bcf all'interno di build) per vedere effettivamente la modifica compiersi
+>    - dovrebbe essere sufficiente cancellare solo il .bbl
+>    - nel caso si può anche cancellare il .bcf
+> 2) fare una modifica minimale (es. spaziare un carattere) all'interno della tesi (non dentro bibliography.bib)
+> 3) aspettare la ricompilazione del file (sarà un po' più lunga del solito, fa la build completa)
+> Nota di margine:
+> - Non sono indispensabili gli ``` addtocategory ``` in thesis-config.tex/tesi-config.tex
+
 ### latexmk
 
 Una volta installata la distribuzione TeX, è necessario installare anche [latexmk](https://mg.readthedocs.io/latexmk.html), un tool che permette di compilare il documento in maniera automatica.
