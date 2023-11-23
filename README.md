@@ -48,9 +48,13 @@ Una volta installata la distribuzione TeX, è necessario installare anche [latex
 
 Successivamente, è possibile compilare il documento tramite il comando `latexmk -pdf thesis.tex`.
 
+> [!TIP]
+> Suggeriamo di utilizzare overleaf per la compilazione, in quanto è stato testato e non presenta problemi, oltre che semplificare la condivisione del documento (oltre che essere un ulteriore luogo in cui mantenere un backup del documento, non si sa mai).\
+> L'Università di Padova **non** fornisce un account premium per overleaf, ma tenendo la struttura separata in pià file, ognuno con uno scopo preciso, si può facilmente lavorare e mostrare le modifiche apportare al Realore/Relatrice.
+
 ## PDF/A
 
-Il template è predisposto per la generazione di un PDF/A. Si consiglia di usare **sempre** jpeg pre le immagini, in modo da non avere problemi di trasparenza.
+Il template è predisposto per la generazione di un PDF/A. Si raccomanda di usare **sempre** jpeg pre le immagini, in modo da non avere problemi di trasparenza.
 
 Al momento sono presenti due warning:
 - **Specification: ISO 19005-1:2005, Clause: 6.8.3.3, Test number: 1**
@@ -75,7 +79,7 @@ Al momento sono presenti due warning:
       
       _root_
 
-Non appena si trova una soluzione, verrà aggiornata la repository con il fix.
+Appena verrà trovata una soluzione, verrà aggiornato il template.
 
 ## Licenza
 
