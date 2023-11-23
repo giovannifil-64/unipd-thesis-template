@@ -35,6 +35,13 @@ Questo template può essere utilizzato sia in locale, come ad esempio con TeXSho
 
 È altresì possibile utilizzare il template con un qualsiasi editor di testo, ma in questo caso è necessario installare una distribuzione TeX, come ad esempio [TeX Live](https://www.tug.org/texlive/).
 
+> [!TIP]
+> - Per far apparire il glossario, occorre citare almeno un termine con ```\gls{termineg}```, mentre per la lista "Acronimi e abbreviazioni" è necessario usare anche il termine ```\gls{termine}```
+> - Il termine con |g| di glossario appare invece con  ```\glsfirstoccur{\gls{termine}}```
+> - Se non andasse, oltre ad alcuni accorgimenti qui adottati, eseguire:
+> 1) ``` pdflatex thesis.tex ```
+> 2) ``` makeglossaries thesis ```
+
 ### latexmk
 
 Una volta installata la distribuzione TeX, è necessario installare anche [latexmk](https://mg.readthedocs.io/latexmk.html), un tool che permette di compilare il documento in maniera automatica.
