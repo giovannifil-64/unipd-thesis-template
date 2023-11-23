@@ -19,7 +19,7 @@ files
 │   └── variables.tex
 |
 ├── images/
-│   ├── unipd_logo.png
+│   ├── unipd_logo.jpeg
 │   └── ...
 |
 ├── preface/
