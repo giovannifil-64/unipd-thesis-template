@@ -19,28 +19,25 @@ Template realizzato per la stesura della tesi di laurea triennale d'Informatica 
 > Si può contribuire al miglioramento costante del template, segnalando eventuali errori o suggerendo modifiche, tramite l'apertura di una issue e/o pull request, ma si prega di non caricare direttamente il template contenete i file generati dalla compilazione o con la vosra tesi.
 
 Rispetto alla versione originale, sono state apportate alcune modifiche, tra cui:
-- Aggiunto un interlinea di 1.5 per rendere più leggibile il documento
-- Migliorata la rappresentazione grafica del documento
-- Sistemati alcuni problemi con la generazione del PDF/A
-- Piccole migliorie al frontespizio
-- Semplificata la struttura del documento
-- Semplificata la gestione della bibliografia
-- Cambiato l'ordine di apparizione di alcune sezioni
-- Rimossi i tag per la generazione di un PDF per la stampa
-- Rimossi alcuni pacchetti non necessari
-- Rimosse le appendici
+- Aggiunto un interlinea di 1.5 per rendere più leggibile il documento;
+- Migliorata la rappresentazione grafica del documento;
+- Sistemati alcuni problemi con la generazione del PDF/A;
+- Piccole migliorie al frontespizio;
+- Semplificata la struttura del documento;
+- Semplificata la gestione della bibliografia;
+- Cambiato l'ordine di apparizione di alcune sezioni;
+- Rimossi i tag per la generazione di un PDF per la stampa;
+- Rimossi alcuni pacchetti non necessari;
+- Rimosse le appendici.
 
 ## Utilizzo
-Questo template può essere utilizzato sia in locale, come ad esempio con TeXShop, VSCode e TeXstudio, che online su Overleaf.
+Dopo aver scaricato la repo, nel percorso [```thesis/files```](https://github.com/giovannifil-64/unipd-thesis-template/tree/main/thesis/files) troverete i file in LaTeX della tesi. Per usarla su Overleaf dovrete comprimere questa cartella e caricare il file ```.zip``` ottenuto.
 
 È altresì possibile utilizzare il template con un qualsiasi editor di testo, ma in questo caso è necessario installare una distribuzione TeX, come ad esempio [TeX Live](https://www.tug.org/texlive/).
 
 > [!TIP]
-> - Per far apparire il glossario, occorre citare almeno un termine con ```\gls{termineg}```, mentre per la lista "Acronimi e abbreviazioni" è necessario usare anche il termine ```\gls{termine}```
-> - Il termine con |g| di glossario appare invece con  ```\glsfirstoccur{\gls{termine}}```
-> - Se non andasse, oltre ad alcuni accorgimenti qui adottati, eseguire:
-> 1) ``` pdflatex thesis.tex ```
-> 2) ``` makeglossaries thesis ```
+> Suggeriamo di utilizzare Overleaf per la compilazione, in quanto è stato testato e non presenta problemi in fase di compilazione, oltre che semplificare la condivisione del documento (oltre che essere un ulteriore luogo in cui mantenere un backup del documento, non si sa mai).\
+> L'Università di Padova **non** fornisce un account premium per overleaf, ma tenendo la struttura separata in pià file, ognuno con uno scopo preciso, si può facilmente lavorare e mostrare le modifiche apportare al Realore/Relatrice.
 
 ### latexmk
 
@@ -48,9 +45,14 @@ Una volta installata la distribuzione TeX, è necessario installare anche [latex
 
 Successivamente, è possibile compilare il documento tramite il comando `latexmk -pdf thesis.tex`.
 
+<br/>
+
 > [!TIP]
-> Suggeriamo di utilizzare overleaf per la compilazione, in quanto è stato testato li e non presenta problemi, oltre che semplificare la condivisione del documento (oltre che essere un ulteriore luogo in cui mantenere un backup del documento, non si sa mai).\
-> L'Università di Padova **non** fornisce un account premium per overleaf, ma tenendo la struttura separata in pià file, ognuno con uno scopo preciso, si può facilmente lavorare e mostrare le modifiche apportare al Realore/Relatrice.
+> - Per far apparire il glossario, occorre citare almeno un termine con ```\gls{termineg}```, mentre per la lista "Acronimi e abbreviazioni" è necessario usare anche il termine ```\gls{termine}```
+> - Il termine con |g| di glossario appare invece con  ```\glsfirstoccur{\gls{termine}}```
+> - Se non andasse, oltre ad alcuni accorgimenti qui adottati, eseguire:
+> 1) ``` pdflatex thesis.tex ```
+> 2) ``` makeglossaries thesis ```
 
 ## PDF/A
 
