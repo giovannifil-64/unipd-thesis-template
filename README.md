@@ -10,13 +10,13 @@
 Template realizzato per la stesura della tesi di laurea triennale d'Informatica dell'Università degli Studi di Padova.
 
 > [!IMPORTANT]
-> Questo template è stato realizzato partendo da quello reso disponibile dal gruppo FIUP all'interno del suo repository GitHub [Thesis-template](https://github.com/FIUP/Thesis-template).
+> Questo template è realizzato partendo da quello reso disponibile dal gruppo FIUP all'interno della repository GitHub [Thesis-template](https://github.com/FIUP/Thesis-template).
 
 > [!NOTE]
-> Questo template è pensato per il corso di laurea trinenale in Informatica, ma nulla vieta di utilizzarlo, con oppurtune modifiche, per altri corsi di laurea.
+> Questo template è pensato per il corso di laurea triennale in Informatica, ma nulla vieta di utilizzarlo, con oppurtune modifiche, per altri corsi di laurea.
 
 > [!WARNING]
-> Si può contribuire al miglioramento costante del template, segnalando eventuali errori o suggerendo modifiche, tramite l'apertura di una issue e/o pull request, ma si prega di non caricare direttaente il template contenete i file generati dalla compilazione o contenente la vosra tesi. Eseguite un fork e lavorate da li.
+> Si può contribuire al miglioramento costante del template, segnalando eventuali errori o suggerendo modifiche, tramite l'apertura di una issue e/o pull request, ma si prega di non caricare direttamente il template contenete i file generati dalla compilazione o con la vosra tesi.
 
 Rispetto alla versione originale, sono state apportate alcune modifiche, tra cui:
 - Aggiunto un interlinea di 1.5 per rendere più leggibile il documento
@@ -25,7 +25,7 @@ Rispetto alla versione originale, sono state apportate alcune modifiche, tra cui
 - Piccole migliorie al frontespizio
 - Semplificata la struttura del documento
 - Semplificata la gestione della bibliografia
-- Ordinati i file della prefazione per numero di apparizione
+- Cambiato l'ordine di apparizione di alcune sezioni
 - Rimossi i tag per la generazione di un PDF per la stampa
 - Rimossi alcuni pacchetti non necessari
 - Rimosse le appendici
@@ -48,9 +48,13 @@ Una volta installata la distribuzione TeX, è necessario installare anche [latex
 
 Successivamente, è possibile compilare il documento tramite il comando `latexmk -pdf thesis.tex`.
 
+> [!TIP]
+> Suggeriamo di utilizzare overleaf per la compilazione, in quanto è stato testato li e non presenta problemi, oltre che semplificare la condivisione del documento (oltre che essere un ulteriore luogo in cui mantenere un backup del documento, non si sa mai).\
+> L'Università di Padova **non** fornisce un account premium per overleaf, ma tenendo la struttura separata in pià file, ognuno con uno scopo preciso, si può facilmente lavorare e mostrare le modifiche apportare al Realore/Relatrice.
+
 ## PDF/A
 
-Il template è predisposto per la generazione di un PDF/A. Si consiglia di usare **sempre** jpeg pre le immagini, in modo da non avere problemi di trasparenza.
+Il template è predisposto per la generazione di un file PDF/A-1a. Per le immagini si raccomanda di usare **sempre** un file _jpeg_, in modo da non avere problemi con la trasparenza per la validazione.
 
 Al momento sono presenti due warning:
 - **Specification: ISO 19005-1:2005, Clause: 6.8.3.3, Test number: 1**
@@ -75,7 +79,7 @@ Al momento sono presenti due warning:
       
       _root_
 
-Non appena si trova una soluzione, verrà aggiornata la repository con il fix.
+Appena verrà trovata una soluzione, verrà aggiornato il template.
 
 ## Licenza
 
