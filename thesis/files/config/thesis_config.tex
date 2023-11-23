@@ -1,16 +1,17 @@
 % Load variables
 \input{config/variables}
-\input{appendix/glossary-entries}
+\input{appendix/glossary_acronyms}
+
 \makeglossaries
-
 \bibliography{appendix/bibliography}
-
 \defbibheading{bibliography} {
     \cleardoublepage
     \phantomsection
     \addcontentsline{toc}{chapter}{\bibname}
     \chapter*{\bibname\markboth{\bibname}{\bibname}}
 }
+
+\glsaddall
 
 %Improvements the paragraph command
 \titleformat{\paragraph}
@@ -31,7 +32,7 @@
 \pagecolor{white}
 
 %Define custom colors
-% \definecolor{lavenderindigo}{rgb}{0.58, 0.34, 0.92}
+%\definecolor{lavenderindigo}{rgb}{0.58, 0.34, 0.92}
 \definecolor{hyperColor}{HTML}{0041EB}
 
 \captionsetup{
@@ -65,7 +66,7 @@
     %linkcolor=blue,
     %citecolor=webgreen,
     %pagecolor=blue,
-    allcolors = hyperColor,
+    allcolors = hyperColor
 }
 
 % Delete all links and show them in black, useful for printing
@@ -150,15 +151,11 @@
 
 \newcommand{\classdesc}[2]{\item[\textbf{#1:}] #2}
 
-%\linespread{1.25}
-\setstretch{1.5}
-
-%\hypersetup{pdfstartview=} commentato il 9/11/23
+\linespread{1.5}
 
 \newcommand{\textbfit}[1]{\textbf{\textit{#1}}}
 
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\leftmark}
-% \fancyhead[R]{\thepage} %For plading the page numer on the top right
-\fancyfoot[C]{\thepage} %For plading the page numer on the bottom of the page
+\fancyfoot[C]{\thepage} % Page number in the center of the footer

@@ -1,16 +1,16 @@
 \chapter{Analisi dei requisiti}
-\label{cap:analisi-requisiti}
+\label{chap:analisi-requisiti}
 
 \section{Casi d'uso}
-
 Per lo studio dei casi di utilizzo del prodotto sono stati creati dei diagrammi.
 I diagrammi dei casi d'uso (in inglese \emph{Use Case Diagram}) sono diagrammi di tipo \gls{uml} dedicati alla descrizione delle funzioni o servizi offerti da un sistema, così come sono percepiti e utilizzati dagli attori che interagiscono col sistema stesso.
 Essendo il progetto finalizzato alla creazione di un tool per l'automazione di un processo, le interazioni da parte dell'utilizzatore devono essere ovviamente ridotte allo stretto necessario. Per questo motivo i diagrammi d'uso risultano semplici e in numero ridotto.
 
 \begin{figure}[ht] 
     \centering 
-    \includegraphics[width=0.7\columnwidth]{usecase/scenario-principale.jpeg} 
+    \includegraphics[width=0.7\columnwidth]{img/usecase/scenario-principale.jpeg} 
     \caption{Use Case - UC0: Scenario principale}
+    \label{fig:scenario_principale}
 \end{figure}
 
 \begin{usecase}{0}{Scenario principale}
@@ -18,7 +18,7 @@ Essendo il progetto finalizzato alla creazione di un tool per l'automazione di u
     \usecasepre{Lo sviluppatore è entrato nel plug-in di simulazione all'interno dell'IDE}
     \usecasedesc{La finestra di simulazione mette a disposizione i comandi per configurare, registrare o eseguire un test}
     \usecasepost{Il sistema è pronto per permettere una nuova interazione}
-\label{uc:scenario-principale}
+    \label{uc:uc_scenario_principale}
 \end{usecase}
 
 \section{Casi d'uso}
@@ -28,6 +28,7 @@ Essendo il progetto finalizzato alla creazione di un tool per l'automazione di u
     \usecasedesc{L'utente può gestire le informazioni del proprio profilo.}
     \usecasepost{Le modifiche vengono salvate nel sistema.}
     \usecasealt{Se l'utente non è autenticato, visualizza un messaggio di errore.}
+    \label{uc:uc_casi_uso}
 \end{usecase}
 
 \begin{usecase}{2}{Creazione Prodotto}
@@ -36,14 +37,13 @@ Essendo il progetto finalizzato alla creazione di un tool per l'automazione di u
     \usecasedesc{L'amministratore può aggiungere un nuovo prodotto al catalogo.}
     \usecasepost{Il nuovo prodotto viene aggiunto con successo.}
     \usecasealt{Se i campi obbligatori non sono compilati, visualizza un messaggio di errore.}
+    \label{uc:uc_creazione_prodotto}
 \end{usecase}
 
 \section{Tracciamento dei requisiti}
-
 Da un'attenta analisi dei requisiti e degli use case effettuata sul progetto è stata stilata la tabella che traccia i requisiti in rapporto agli use case.\\
 Sono stati individuati diversi tipi di requisiti e si è quindi fatto utilizzo di un codice identificativo per distinguerli.\\
 Il codice dei requisiti, dove ogni requisito è identificato con il carattere \textbf{R}, è così strutturato:
-
 \begin{enumerate}
     \item[\textbf{F}:] Funzionale.
     \item[\textbf{Q}:] Qualitativo.
@@ -53,45 +53,45 @@ Il codice dei requisiti, dove ogni requisito è identificato con il carattere \t
     \item[\textbf{Z}:] Opzionale.
 \end{enumerate}
 
-Nelle tabelle \ref{tab:requisiti-funzionali}, \ref{tab:requisiti-qualitativi} e \ref{tab:requisiti-vincolo} sono riassunti i requisiti e il loro tracciamento con gli use case delineati in fase di analisi.
+Nelle tabelle \ref{tab:requisiti_funzionali}, \ref{tab:requisiti_qualitativi} e \ref{tab:requisiti_vincolo} sono riassunti i requisiti e il loro tracciamento con gli use case delineati in fase di analisi.
 
 \section{Tabelle dei requisiti}
-
 \begin{table}[h]
-\begin{tabularx}{\textwidth}{lXl}
-\hline
-    \textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
-    \hline
-    RFN-1 & L'interfaccia permette di configurare il tipo di sonde del test & UC1\\
-\hline
-\end{tabularx}
-\vspace{4pt}
-\caption{Tabella del tracciamento dei requisti funzionali}
-\label{tab:requisiti-funzionali}
+    \begin{tabularx}{\textwidth}{lXl}
+        \hline
+        \textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case} \\
+        \hline
+        RFN-1 & L'interfaccia permette di configurare il tipo di sonde del test & UC1 \\
+        \hline
+    \end{tabularx}    
+    \caption{Tabella del tracciamento dei requisiti funzionali}
+    \label{tab:requisiti_funzionali}
 \end{table}
 
 \begin{table}[h]
-\begin{tabularx}{\textwidth}{lXl}
-\hline
-    \textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
-    \hline
-    RQD-1    & Le prestazioni del simulatore hardware deve garantire la giusta esecuzione dei test e non la generazione di falsi negativi & - \\
-\hline
-\end{tabularx}
-\vspace{4pt}
-\caption{Tabella del tracciamento dei requisiti qualitativi}
-\label{tab:requisiti-qualitativi}
+    \begin{tabularx}{\textwidth}{lXl}
+        \hline
+        \textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
+        \hline
+        RQD-1n & Le prestazioni del simulatore hardware deve garantire la giusta esecuzione dei test e non la generazione di falsi negativi & - \\
+        \hline
+    \end{tabularx}
+    \vspace{4pt}
+    \caption{Tabella del tracciamento dei requisiti qualitativi}
+    \label{tab:requisiti_qualitativi}
 \end{table}
 
 \begin{table}[h]
-\begin{tabularx}{\textwidth}{lXl}
-\hline
-    \textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
-    \hline
-    RVO-1    & La libreria per l'esecuzione dei test automatici deve essere riutilizzabile & - \\
-\hline
-\end{tabularx}
-\vspace{4pt}
-\caption{Tabella del tracciamento dei requisiti di vincolo}
-\label{tab:requisiti-vincolo}
+    \begin{tabularx}{\textwidth}{lXl}
+        \hline
+        \textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
+        \hline
+        RVO-1 & La libreria per l'esecuzione dei test automatici deve essere riutilizzabile & - \\
+        \hline
+    \end{tabularx}
+    \vspace{4pt}
+    \caption{Tabella del tracciamento dei requisiti di vincolo}
+    \label{tab:requisiti_vincolo}
 \end{table}
+
+\newpage
