@@ -1,6 +1,6 @@
 \documentclass[
     10pt,
-    oneside,   % symmetric pagination, for digital view
+    oneside, % symmetric pagination
     a4paper,
     %english,
     italian
@@ -14,19 +14,15 @@
 \hypersetup{pdfstartview=}
 \begin{document}
     %\layout
-    
     \frontmatter
     \input{preface/1_title_page}
+    \increasepagenumbering % increase the page numbrering by 1, in order to cout the frontispiece
     \input{preface/2_copyright}
     \input{preface/3_acknowledgements}
     \input{preface/4_abstract}
-    \input{preface/5_table_of_contents}
-
-    \backmatter
-    \printglossary[type=\acronymtype, title=Acronimi e abbreviazioni, toctitle=Acronimi e abbreviazioni]
-    \printglossary[type=main, title=Glossario, toctitle=Glossario]
-    
-    \cleardoublepage
+    \blankpage % example of a blank page, that also increases the page couter by 1
+    \input{preface/5_table_of_contents}    
+    %\cleardoublepage
 
     \mainmatter
     \input{chapters/1_introduction}
@@ -37,7 +33,12 @@
     \input{chapters/6_verify_validate}
     \input{chapters/7_conclusions}
 
-    \appendix
+    %\appendix
+    
+    \pagenumbering{roman}
     \backmatter
     \input{appendix/bibliography}
+    \input{appendix/webliography}
+    \printglossary[type=\acronymtype, title=Acronimi e abbreviazioni, toctitle=Acronimi e abbreviazioni]
+    \printglossary[type=main, title=Glossario, toctitle=Glossario]
 \end{document}

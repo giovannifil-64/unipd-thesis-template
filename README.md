@@ -13,10 +13,10 @@ Template realizzato per la stesura della tesi di laurea triennale d'Informatica 
 > Questo template è realizzato partendo da quello reso disponibile dal gruppo FIUP all'interno della repository GitHub [Thesis-template](https://github.com/FIUP/Thesis-template).
 
 > [!NOTE]
-> Questo template è pensato per il corso di laurea triennale in Informatica, ma nulla vieta di utilizzarlo, con oppurtune modifiche, per altri corsi di laurea.
+> Questo template è pensato per il corso di laurea triennale in Informatica, ma nulla vieta di utilizzarlo, con le oppurtune modifiche, per altri corsi di laurea.
 
 > [!WARNING]
-> Si può contribuire al miglioramento costante del template, segnalando eventuali errori o suggerendo modifiche, tramite l'apertura di una issue e/o pull request, ma si prega di non caricare direttamente il template contenete i file generati dalla compilazione o con la vosra tesi.
+> Si può contribuire al miglioramento costante del template, segnalando eventuali errori o suggerendo modifiche, tramite l'apertura di una issue e/o pull request, ma si prega di non caricare direttamente il template contenete i file generati dalla compilazione o con la vostra tesi.
 
 Rispetto alla versione originale, sono state apportate alcune modifiche, tra cui:
 - Aggiunto un interlinea di 1.5 per rendere più leggibile il documento;
@@ -25,9 +25,10 @@ Rispetto alla versione originale, sono state apportate alcune modifiche, tra cui
 - Piccole migliorie al frontespizio;
 - Semplificata la struttura del documento;
 - Semplificata la gestione della bibliografia;
-- Cambiato l'ordine di apparizione di alcune sezioni;
+- Migliorato l'ordine di apparizione di alcune sezioni;
 - Rimossi i tag per la generazione di un PDF per la stampa;
 - Rimossi alcuni pacchetti non necessari;
+- Aggiunta la Sitografia dedicata;
 - Rimosse le appendici.
 
 ## Utilizzo
@@ -36,8 +37,8 @@ Dopo aver scaricato la repo, nel percorso [```thesis/files```](https://github.co
 È altresì possibile utilizzare il template con un qualsiasi editor di testo, ma in questo caso è necessario installare una distribuzione TeX, come ad esempio [TeX Live](https://www.tug.org/texlive/).
 
 > [!TIP]
-> Suggeriamo di utilizzare Overleaf per la compilazione, in quanto è stato testato e non presenta problemi in fase di compilazione, oltre che semplificare la condivisione del documento (oltre che essere un ulteriore luogo in cui mantenere un backup del documento, non si sa mai).\
-> L'Università di Padova **non** fornisce un account premium per overleaf, ma tenendo la struttura separata in pià file, ognuno con uno scopo preciso, si può facilmente lavorare e mostrare le modifiche apportare al Realore/Relatrice.
+> Suggeriamo di utilizzare Overleaf per la compilazione, è stato testato e non presenta problemi di compilazione, oltre che semplificare la condivisione del documento (e permette di avere un backup online del proprio lavoro).
+> L'Università di Padova **non** fornisce un account premium per Overleaf, per cui si potrebbe incorrere in problemi di compilazione per documenti di grandi dimensioni.
 
 ### latexmk
 

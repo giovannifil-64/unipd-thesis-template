@@ -25,6 +25,9 @@
     ex-am-ple
 }
 
+% Delete all links and show them in black, useful for printing
+% \hypersetup{draft}
+
 % Images path
 \graphicspath{{img/}}
 
@@ -32,8 +35,7 @@
 \pagecolor{white}
 
 %Define custom colors
-%\definecolor{lavenderindigo}{rgb}{0.58, 0.34, 0.92}
-\definecolor{hyperColor}{HTML}{0041EB}
+\definecolor{hyperColor}{HTML}{0B3EE3}
 
 \captionsetup{
     tableposition=top,
@@ -68,9 +70,6 @@
     %pagecolor=blue,
     allcolors = hyperColor
 }
-
-% Delete all links and show them in black, useful for printing
-% \hypersetup{draft}
 
 % Listings setup
 \lstset{
@@ -159,3 +158,17 @@
 \fancyhf{}
 \fancyhead[L]{\leftmark}
 \fancyfoot[C]{\thepage} % Page number in the center of the footer
+
+\newcommand\blankpage{ % comando pagina vuota
+    \clearpage
+    \begingroup
+      \null
+      \thispagestyle{empty}
+      \hypersetup{pageanchor=false}
+      \clearpage
+    \endgroup
+}
+
+\newcommand\increasepagenumbering{
+    \addtocounter{page}{+1}
+}
