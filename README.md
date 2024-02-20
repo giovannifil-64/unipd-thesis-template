@@ -19,6 +19,7 @@ Template realizzato per la stesura della tesi di laurea triennale d'Informatica 
 > Si può contribuire al miglioramento costante del template, segnalando eventuali errori o suggerendo modifiche, tramite l'apertura di una issue e/o pull request, ma si prega di non caricare direttamente il template contenete i file generati dalla compilazione o con la vostra tesi.
 
 Rispetto alla versione originale, sono state apportate alcune modifiche, tra cui:
+
 - Aggiunto un interlinea di 1.5 per rendere più leggibile il documento;
 - Migliorata la rappresentazione grafica del documento;
 - Sistemati alcuni problemi con la generazione del PDF/A;
@@ -32,6 +33,7 @@ Rispetto alla versione originale, sono state apportate alcune modifiche, tra cui
 - Rimosse le appendici.
 
 ## Utilizzo
+
 Dopo aver scaricato la repo, nel percorso [```thesis/files```](https://github.com/giovannifil-64/unipd-thesis-template/tree/main/thesis/files) troverete i file in LaTeX della tesi. Per usarla su Overleaf dovrete comprimere questa cartella e caricare il file ```.zip``` ottenuto.
 
 È altresì possibile utilizzare il template con un qualsiasi editor di testo, ma in questo caso è necessario installare una distribuzione TeX, come ad esempio [TeX Live](https://www.tug.org/texlive/).

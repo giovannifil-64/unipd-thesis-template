@@ -2,22 +2,11 @@
 \input{config/variables}
 \input{appendix/glossary_acronyms}
 
-\makeglossaries
-\bibliography{appendix/bibliography}
-\defbibheading{bibliography} {
-    \cleardoublepage
-    \phantomsection
-    \addcontentsline{toc}{chapter}{\bibname}
-    \chapter*{\bibname\markboth{\bibname}{\bibname}}
-}
+% Define custom colors
+\definecolor{hyperColor}{HTML}{0B3EE3}
 
-\glsaddall
-
-%Improvements the paragraph command
-\titleformat{\paragraph}
-{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
-\titlespacing*{\paragraph}
-{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+% Set line height
+\linespread{1.5}
 
 % Custom hyphenation rules
 \hyphenation {
@@ -25,51 +14,15 @@
     ex-am-ple
 }
 
-% Delete all links and show them in black, useful for printing
-% \hypersetup{draft}
-
 % Images path
 \graphicspath{{img/}}
 
 % Force page color, as some editors set a grayish color as default
 \pagecolor{white}
 
-%Define custom colors
-\definecolor{hyperColor}{HTML}{0B3EE3}
-
-\captionsetup{
-    tableposition=top,
-    figureposition=bottom,
-    font=small,
-    format=hang,
-    labelfont=bf
-}
-
-\hypersetup{
-    %hyperfootnotes=false,
-    %pdfpagelabels,
-    colorlinks=true,
-    linktocpage=true,
-    pdfstartpage=1,
-    pdfstartview=,
-    breaklinks=true,
-    pdfpagemode=UseNone,
-    pageanchor=true,
-    pdfpagemode=UseOutlines,
-    plainpages=false,
-    bookmarksnumbered,
-    bookmarksopen=true,
-    bookmarksopenlevel=1,
-    hypertexnames=true,
-    pdfhighlight=/O,
-    %nesting=true,
-    %frenchlinks,
-    %urlcolor=lavenderindigo,
-    %linkcolor=blue,
-    %citecolor=webgreen,
-    %pagecolor=blue,
-    allcolors = hyperColor
-}
+% Better spacing for footnotes
+\setlength{\skip\footins}{5mm}
+\setlength{\footnotesep}{5mm}
 
 % Listings setup
 \lstset{
@@ -89,18 +42,45 @@
     frame=single
 }
 
-\newcommand{\sectionname}{sezione}
-\addto\captionsitalian{\renewcommand{\figurename}{Figura}
-                       \renewcommand{\tablename}{Tabella}}
+% Add a subscript G to a glossary entry
+\newcommand{\glox}{\textsubscript{\textbf{\textit{G }}}}
 
-\newcommand{\glsfirstoccur}{\ap{{[g]}}}
+% If the subscript G is followed by a punctuation character, or anything else, you need to use \gloxspacing to prevent rendering issues, where the characters collide. Example in Chapter 7
+\newcommand{\gloxspacing}{\hspace{-0.3em}}
 
-\newcommand{\intro}[1]{\emph{\textsf{#1}}}
+% Improvements the paragraph command
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
-% Risks environment
+% Define use case environment
+\newcounter{usecasecounter} % define a counter
+\setcounter{usecasecounter}{0} % set the counter to some initial value
+% Parameters
+% #1: ID
+% #2: Nome
+\newenvironment{usecase}[2]{
+    \renewcommand{\theusecasecounter}{\usecasename #1}  % this is where the display of the counter is overwritten/modified
+    \refstepcounter{usecasecounter} % increment counter
+    \vspace{2em}
+    \par \noindent % start new paragraph
+    {\normalsize \textbf{\usecasename #1: #2}} % display the title before the content of the environment is displayed
+    \vspace{.5em}
+}{
+    \medskip
+}
+\newcommand{\usecasename}{UC}
+\newcommand{\usecaseactors}[1]{\textbf{\\Attori Principali:} #1}
+\newcommand{\usecasepre}[1]{\textbf{\\Precondizioni:} #1}
+\newcommand{\usecasedesc}[1]{\textbf{\\Descrizione:} #1}
+\newcommand{\usecasepost}[1]{\textbf{\\Postcondizioni:} #1}
+\newcommand{\usecasealt}[1]{\textbf{\\Scenario Alternativo:} #1}
+
+% Define risks environment
 \newcounter{riskcounter} % define a counter
 \setcounter{riskcounter}{0} % set the counter to some initial value
-%%%% Parameters
+% Parameters
 % #1: Title
 \newenvironment{risk}[1]{
     \refstepcounter{riskcounter} % increment counter
@@ -109,57 +89,18 @@
 }{
     \par\medskip
 }
-
 \newcommand{\riskname}{Rischio}
 \newcommand{\riskdescription}[1]{\textbf{\\Descrizione:} #1.}
 \newcommand{\risksolution}[1]{\textbf{\\Soluzione:} #1.}
 
-% Use case environment
-\newcounter{usecasecounter} % define a counter
-\setcounter{usecasecounter}{0} % set the counter to some initial value
-
-%%%% Parameters
-% #1: ID
-% #2: Nome
-\newenvironment{usecase}[2]{
-    \renewcommand{\theusecasecounter}{\usecasename #1}  % this is where the display of the counter is overwritten/modified
-    \refstepcounter{usecasecounter} % increment counter
-    \vspace{10pt}
-    \par \noindent % start new paragraph
-    {\large \textbf{\usecasename #1: #2}} % display the title before the content of the environment is displayed
-    \medskip
-}{
-    \medskip
-}
-\newcommand{\usecasename}{UC}
-\newcommand{\usecaseactors}[1]{\textbf{\\Attori Principali:} #1. \vspace{4pt}}
-\newcommand{\usecasepre}[1]{\textbf{\\Precondizioni:} #1. \vspace{4pt}}
-\newcommand{\usecasedesc}[1]{\textbf{\\Descrizione:} #1. \vspace{4pt}}
-\newcommand{\usecasepost}[1]{\textbf{\\Postcondizioni:} #1. \vspace{4pt}}
-\newcommand{\usecasealt}[1]{\textbf{\\Scenario Alternativo:} #1. \vspace{4pt}}
-
-% Namespace description environment
-\newenvironment{namespacedesc}{
-    \vspace{10pt}
-    \par \noindent  % start new paragraph
-    \begin{description}
-}{
-    \end{description}
-    \medskip
-}
-
-\newcommand{\classdesc}[2]{\item[\textbf{#1:}] #2}
-
-\linespread{1.5}
-
-\newcommand{\textbfit}[1]{\textbf{\textit{#1}}}
-
+% Apply fancy styling to pages
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\leftmark}
+\fancyhead[L]{\leftmark} % Places Chapter N. Chatper title on the top left
 \fancyfoot[C]{\thepage} % Page number in the center of the footer
 
-\newcommand\blankpage{ % comando pagina vuota
+% Adds a blank page while increasing the page number
+\newcommand\blankpage{ 
     \clearpage
     \begingroup
       \null
@@ -169,6 +110,46 @@
     \endgroup
 }
 
+% Increase page numbering
 \newcommand\increasepagenumbering{
     \addtocounter{page}{+1}
+}
+
+% Make glossaries and bibliography
+\makeglossaries
+\bibliography{appendix/bibliography}
+\defbibheading{bibliography} {
+    \cleardoublepage
+    \phantomsection
+    \addcontentsline{toc}{chapter}{\bibname}
+    \chapter*{\bibname\markboth{\bibname}{\bibname}}
+}
+\glsaddall
+
+% Set up hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linktocpage=true,
+    pdfstartpage=1,
+    pdfstartview=,
+    breaklinks=true,
+    pdfpagemode=UseNone,
+    pageanchor=true,
+    pdfpagemode=UseOutlines,
+    plainpages=false,
+    bookmarksnumbered,
+    bookmarksopen=true,
+    bookmarksopenlevel=1,
+    hypertexnames=true,
+    pdfhighlight=/O,
+    allcolors = hyperColor
+}
+
+% Set up captions
+\captionsetup{
+    tableposition=top,
+    figureposition=bottom,
+    font=small,
+    format=hang,
+    labelfont=bf
 }

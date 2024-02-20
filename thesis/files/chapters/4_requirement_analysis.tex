@@ -3,27 +3,27 @@
 
 \section{Casi d'uso}
 Per lo studio dei casi di utilizzo del prodotto sono stati creati dei diagrammi.
-I diagrammi dei casi d'uso (in inglese \emph{Use Case Diagram}) sono diagrammi di tipo \gls{uml} dedicati alla descrizione delle funzioni o servizi offerti da un sistema, così come sono percepiti e utilizzati dagli attori che interagiscono col sistema stesso.
+I diagrammi dei casi d'uso (in inglese \textit{Use Case Diagram}) sono diagrammi di tipo \gls{uml} dedicati alla descrizione delle funzioni o servizi offerti da un sistema, così come sono percepiti e utilizzati dagli attori che interagiscono col sistema stesso.
 Essendo il progetto finalizzato alla creazione di un tool per l'automazione di un processo, le interazioni da parte dell'utilizzatore devono essere ovviamente ridotte allo stretto necessario. Per questo motivo i diagrammi d'uso risultano semplici e in numero ridotto.
 
-\begin{figure}[ht] 
-    \centering 
-    \includegraphics[width=0.7\columnwidth]{img/usecase/scenario-principale.jpeg} 
-    \caption{Use Case - UC0: Scenario principale}
+\begin{figure}[ht]
+    \vspace{2em}
+    \centering
+    \includegraphics[width=0.75\columnwidth]{img/usecase/scenario-principale.jpeg} 
+    \caption{Use Case 0: Scenario principale}
     \label{fig:scenario_principale}
 \end{figure}
 
 \begin{usecase}{0}{Scenario principale}
-    \usecaseactors{Sviluppatore applicativi}
-    \usecasepre{Lo sviluppatore è entrato nel plug-in di simulazione all'interno dell'IDE}
-    \usecasedesc{La finestra di simulazione mette a disposizione i comandi per configurare, registrare o eseguire un test}
-    \usecasepost{Il sistema è pronto per permettere una nuova interazione}
+    \usecaseactors{Sviluppatore applicativi.}
+    \usecasepre{Lo sviluppatore è entrato nel plugin di simulazione all'interno dell'IDE.}
+    \usecasedesc{La finestra di simulazione mette a disposizione i comandi per configurare, registrare o eseguire un test.}
+    \usecasepost{Il sistema è pronto per permettere una nuova interazione.}
     \label{uc:uc_scenario_principale}
 \end{usecase}
 
-\section{Casi d'uso}
 \begin{usecase}{1}{Gestione Utente}
-    \usecaseactors{Amministratore, Utente Registrato}
+    \usecaseactors{Amministratore, Utente Registrato.}
     \usecasepre{L'utente deve essere autenticato nel sistema.}
     \usecasedesc{L'utente può gestire le informazioni del proprio profilo.}
     \usecasepost{Le modifiche vengono salvate nel sistema.}
@@ -32,7 +32,7 @@ Essendo il progetto finalizzato alla creazione di un tool per l'automazione di u
 \end{usecase}
 
 \begin{usecase}{2}{Creazione Prodotto}
-    \usecaseactors{Amministratore}
+    \usecaseactors{Amministratore.}
     \usecasepre{L'amministratore ha effettuato l'accesso al sistema.}
     \usecasedesc{L'amministratore può aggiungere un nuovo prodotto al catalogo.}
     \usecasepost{Il nuovo prodotto viene aggiunto con successo.}
@@ -56,42 +56,68 @@ Il codice dei requisiti, dove ogni requisito è identificato con il carattere \t
 Nelle tabelle \ref{tab:requisiti_funzionali}, \ref{tab:requisiti_qualitativi} e \ref{tab:requisiti_vincolo} sono riassunti i requisiti e il loro tracciamento con gli use case delineati in fase di analisi.
 
 \section{Tabelle dei requisiti}
-\begin{table}[h]
-    \begin{tabularx}{\textwidth}{lXl}
-        \hline
-        \textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case} \\
-        \hline
-        RFN-1 & L'interfaccia permette di configurare il tipo di sonde del test & UC1 \\
-        \hline
-    \end{tabularx}    
-    \caption{Tabella del tracciamento dei requisiti funzionali}
+\begin{center}
+    \begin{longtable}{|p{2.25cm}|p{7.75cm}|p{2.25cm}|}
+    \hline \multicolumn{1}{|c|}{\textbf{Requisito}} & \multicolumn{1}{c|}{\textbf{Descrizione}} & \multicolumn{1}{c|}{\textbf{Use Case}} \\ \hline 
+    \endfirsthead
+    
+    \multicolumn{3}{c}%
+    {{\bfseries \tablename\ \thetable{} -- Continuo della tabella}} \\
+    \hline \multicolumn{1}{|c|}{\textbf{Requisito}} & \multicolumn{1}{c|}{\textbf{Descrizione}} & \multicolumn{1}{c|}{\textbf{Use Case}} \\ \hline 
+    \endhead
+    
+    \hline \multicolumn{3}{|r|}{{Continua nella prossima pagina...}} \\ \hline
+    \endfoot
+    \endlastfoot
+    
+    RFN-1 & L'interfaccia permette di configurare il tipo di sonde del test & UC1 \\
+    \hline
+    
+    \caption{Tabella del tracciamento dei requisiti funzionali.}
     \label{tab:requisiti_funzionali}
-\end{table}
+    \end{longtable}
+\end{center}
 
-\begin{table}[h]
-    \begin{tabularx}{\textwidth}{lXl}
-        \hline
-        \textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
-        \hline
-        RQD-1n & Le prestazioni del simulatore hardware deve garantire la giusta esecuzione dei test e non la generazione di falsi negativi & - \\
-        \hline
-    \end{tabularx}
-    \vspace{4pt}
-    \caption{Tabella del tracciamento dei requisiti qualitativi}
+\begin{center}
+    \begin{longtable}{|p{2.25cm}|p{7.75cm}|p{2.25cm}|}
+    \hline \multicolumn{1}{|c|}{\textbf{Requisito}} & \multicolumn{1}{c|}{\textbf{Descrizione}} & \multicolumn{1}{c|}{\textbf{Use Case}} \\ \hline 
+    \endfirsthead
+    
+    \multicolumn{3}{c}%
+    {{\bfseries \tablename\ \thetable{} -- Continuo della tabella}} \\
+    \hline \multicolumn{1}{|c|}{\textbf{Requisito}} & \multicolumn{1}{c|}{\textbf{Descrizione}} & \multicolumn{1}{c|}{\textbf{Use Case}} \\ \hline 
+    \endhead
+    
+    \hline \multicolumn{3}{|r|}{{Continua nella prossima pagina...}} \\ \hline
+    \endfoot
+    \endlastfoot
+    
+    RQD-1n & Le prestazioni del simulatore hardware deve garantire la giusta esecuzione dei test e non la generazione di falsi negativi & - \\
+    \hline
+    \caption{Tabella del tracciamento dei requisiti qualitativi.}
     \label{tab:requisiti_qualitativi}
-\end{table}
+    \end{longtable}
+\end{center}
 
-\begin{table}[h]
-    \begin{tabularx}{\textwidth}{lXl}
-        \hline
-        \textbf{Requisito} & \textbf{Descrizione} & \textbf{Use Case}\\
-        \hline
-        RVO-1 & La libreria per l'esecuzione dei test automatici deve essere riutilizzabile & - \\
-        \hline
-    \end{tabularx}
-    \vspace{4pt}
-    \caption{Tabella del tracciamento dei requisiti di vincolo}
+\begin{center}
+    \begin{longtable}{|p{2.25cm}|p{7.75cm}|p{2.25cm}|}
+    \hline \multicolumn{1}{|c|}{\textbf{Requisito}} & \multicolumn{1}{c|}{\textbf{Descrizione}} & \multicolumn{1}{c|}{\textbf{Use Case}} \\ \hline 
+    \endfirsthead
+    
+    \multicolumn{3}{c}%
+    {{\bfseries \tablename\ \thetable{} -- Continuo della tabella}} \\
+    \hline \multicolumn{1}{|c|}{\textbf{Requisito}} & \multicolumn{1}{c|}{\textbf{Descrizione}} & \multicolumn{1}{c|}{\textbf{Use Case}} \\ \hline 
+    \endhead
+    
+    \hline \multicolumn{3}{|r|}{{Continua nella prossima pagina}} \\ \hline
+    \endfoot
+    \endlastfoot
+    
+    RVO-1 & La libreria per l'esecuzione dei test automatici deve essere riutilizzabile & - \\
+    \hline
+    \caption{Tabella del tracciamento dei requisiti di vincolo.}
     \label{tab:requisiti_vincolo}
-\end{table}
+    \end{longtable}
+\end{center}
 
 \newpage
