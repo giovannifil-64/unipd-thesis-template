@@ -20,26 +20,26 @@ Template realizzato per la stesura della tesi di laurea triennale d'Informatica 
 
 Rispetto alla versione originale, sono state apportate alcune modifiche, tra cui:
 
+- Sistemati alcuni problemi con la generazione del PDF/A;
 - Aggiunto un interlinea di 1.5 per rendere più leggibile il documento;
 - Migliorata la rappresentazione grafica del documento;
-- Sistemati alcuni problemi con la generazione del PDF/A;
 - Piccole migliorie al frontespizio;
 - Semplificata la struttura del documento;
-- Semplificata la gestione della bibliografia;
 - Migliorato l'ordine di apparizione di alcune sezioni;
-- Rimossi i tag per la generazione di un PDF per la stampa;
 - Rimossi alcuni pacchetti non necessari;
+- Rimossi i tag per la generazione di un PDF per la stampa;
+- Semplificata la gestione della bibliografia;
 - Aggiunta la Sitografia dedicata;
 - Rimosse le appendici.
 
 ## Utilizzo
 
-Dopo aver scaricato la repo, nel percorso [```thesis/files```](https://github.com/giovannifil-64/unipd-thesis-template/tree/main/thesis/files) troverete i file in LaTeX della tesi. Per usarla su Overleaf dovrete comprimere questa cartella e caricare il file ```.zip``` ottenuto.
+Dopo aver scaricato la repo, nel percorso [```thesis/files```](https://github.com/giovannifil-64/unipd-thesis-template/tree/main/thesis/files) troverete i file in LaTeX della tesi. Per copiarla su Overleaf va compressa la cartella ```files``` e caricare il file ```.zip``` ottenuto.
 
 È altresì possibile utilizzare il template con un qualsiasi editor di testo, ma in questo caso è necessario installare una distribuzione TeX, come ad esempio [TeX Live](https://www.tug.org/texlive/).
 
 > [!TIP]
-> Suggeriamo di utilizzare Overleaf per la compilazione, è stato testato e non presenta problemi di compilazione, oltre che semplificare la condivisione del documento (e permette di avere un backup online del proprio lavoro).
+> Suggerisco di utilizzare Overleaf, è stato testato e non presenta problemi di compilazione, oltre che semplificare la condivisione del documento (e permette di avere un backup online del proprio lavoro).
 > L'Università di Padova **non** fornisce un account premium per Overleaf, per cui si potrebbe incorrere in problemi di compilazione per documenti di grandi dimensioni.
 
 ### latexmk
@@ -59,7 +59,7 @@ Successivamente, è possibile compilare il documento tramite il comando `latexmk
 
 ## PDF/A
 
-Il template è predisposto per la generazione di un file PDF/A-1a. Per le immagini si raccomanda di usare **sempre** un file _jpeg_, in modo da non avere problemi con la trasparenza per la validazione.
+Il template è predisposto per la generazione di un file PDF/A-1A. Per le immagini si raccomanda di usare **sempre** un file _jpeg_, in modo da non avere problemi con la trasparenza per la validazione.
 
 Al momento sono presenti due warning:
 - **Specification: ISO 19005-1:2005, Clause: 6.8.3.3, Test number: 1**
