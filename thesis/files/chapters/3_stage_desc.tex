@@ -4,7 +4,7 @@
 \section{Introduzione al progetto}
 \begin{figure}[!ht] 
     \centering 
-    \includegraphics[width=0.5\columnwidth]{img/pk_estate.jpeg} 
+    \includegraphics[alt={Testo alternativo dell'immagine}, width=0.5\columnwidth]{img/pk_estate.jpeg}
     \caption{Caption}
     \label{fig:pk_estate}
 \end{figure}
@@ -25,17 +25,20 @@ Si è quindi proceduto a elaborare delle possibili soluzioni per far fronte a ta
 
 \begin{center}
     \begin{longtable}{|p{2.25cm}|p{7.75cm}|p{2.25cm}|}
-    \hline \multicolumn{1}{|c|}{\textbf{A}} & \multicolumn{1}{c|}{B} \\ \hline 
+    \hline
+    \multicolumn{1}{|c|}{\textbf{A}} & \multicolumn{1}{c|}{\textbf{B}}\\ 
+    \hline 
     \endfirsthead
-    
     \multicolumn{3}{c}%
-    {{\bfseries \tablename\ \thetable{} -- Continuo della tabella}} \\
-   \hline \multicolumn{1}{|c|}{\textbf{A}} & \multicolumn{1}{c|}{B} \\ \hline 
+    {{\bfseries \tablename\ \thetable{} -- Continuo della tabella}}\\
+    \hline
+    \multicolumn{1}{|c|}{\textbf{A}} & \multicolumn{1}{c|}{B}\\ \hline 
     \endhead
-    
-    \hline \multicolumn{3}{|r|}{{Continua nella prossima pagina...}} \\ \hline
+    \hline
+    \multicolumn{3}{|r|}{{Continua nella prossima pagina...}}\\
+    \hline
     \endfoot
-    \endlastfoot
+    \endlastfoot 
     
     AA & BB \\
     \hline
@@ -45,6 +48,12 @@ Si è quindi proceduto a elaborare delle possibili soluzioni per far fronte a ta
 \end{center}
 
 \section{Pianificazione}
+\begin{figure}[!ht] 
+    \centering 
+    \includegraphics[alt={Testo alternativo dell'immagine}, width=0.5\columnwidth]{img/pk_estate.jpeg}
+    \caption{Caption}
+    \label{fig:pk_estate_2}
+\end{figure}
 \lipsum[1]
 
 \subsection{subsection}
