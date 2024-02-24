@@ -32,7 +32,7 @@ Rispetto alla versione originale, sono state apportate alcune modifiche, tra cui
 - Aggiunta la Sitografia dedicata;
 - Rimosse le appendici.
 
-Qui puoi vedere un esempio del [PDF generato](rsc\thesis_template.pdf)
+Qui puoi vedere un esempio del [PDF generato](rsc/thesis_template.pdf).
 
 ## Utilizzo
 
