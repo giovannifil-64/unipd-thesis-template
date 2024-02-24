@@ -32,6 +32,8 @@ Rispetto alla versione originale, sono state apportate alcune modifiche, tra cui
 - Aggiunta la Sitografia dedicata;
 - Rimosse le appendici.
 
+Qui puoi vedere un esempio del [PDF generato](rsc\thesis_template.pdf)
+
 ## Utilizzo
 
 Dopo aver scaricato la repo, nel percorso [```thesis/files```](https://github.com/giovannifil-64/unipd-thesis-template/tree/main/thesis/files) troverete i file in LaTeX della tesi. Per copiarla su Overleaf va compressa la cartella ```files``` e caricare il file ```.zip``` ottenuto.
