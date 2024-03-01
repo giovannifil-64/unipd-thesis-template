@@ -44,46 +44,49 @@ Dopo aver scaricato la repo, nel percorso [```thesis/files```](https://github.co
 > Suggerisco di utilizzare Overleaf, è stato testato e non presenta problemi di compilazione, oltre che semplificare la condivisione del documento (e permette di avere un backup online del proprio lavoro).
 > L'Università di Padova **non** fornisce un account premium per Overleaf, per cui si potrebbe incorrere in problemi di compilazione per documenti di grandi dimensioni.
 
+<br/>
+
+> [!NOTE]
+>
+> - Per far apparire il Glossario e la lista degli Acronimi e abbreviazioni occorre citare almeno un termine con ```\gls{termineg}``` (dove ```g``` è una convenzione interna). Questo farà apparire il termine in forma estesa, ad esempio ```\gls{sdkg}``` apparirà come "_Software Development Kit_".
+> - Per far anche apparire la sigla, occorre utilizzare ```\gls{termine}```, quindi non con la ```g```. Ad esempio ```\gls{sdk}``` apparirà come "_Software Development Kit (SDK)_".
+> - Per inserire una g a pedice, occorre utilizzare ```\gls{termineg}\glox```, in questo modo apparirà come "_Software Development Kit<sub>g</sub>_".
+> In caso vi sia la presenza di un carattere dopo la g, come un punto o una virgola, occorre utilizzare ```\gls{termineg}\glox\gloxspacing```, in questo modo vi sarà il giusto spazio tra la g a pedice e il carattere.
+> - Per inserire un termine nel Glossario, bisogna aggiungere la voce nel file ```references/glossary_acronyms.tex```, seguendo la struttura già presente.
+> In caso di dubbi, si può consultare il Capitolo 7 di questo template, che mostra alcuni esempi di utilizzo.
+
 ### latexmk
 
 Una volta installata la distribuzione TeX, è necessario installare anche [latexmk](https://mg.readthedocs.io/latexmk.html), un tool che permette di compilare il documento in maniera automatica.
 
 Successivamente, è possibile compilare il documento tramite il comando `latexmk -pdf thesis.tex`.
 
-<br/>
-
-> [!TIP]
-> - Per far apparire il glossario, occorre citare almeno un termine con ```\gls{termineg}```, mentre per la lista "Acronimi e abbreviazioni" è necessario usare anche il termine ```\gls{termine}```
-> - Il termine con |g| di glossario appare invece con  ```\glsfirstoccur{\gls{termine}}```
-> - Se non andasse, oltre ad alcuni accorgimenti qui adottati, eseguire:
-> 1) ``` pdflatex thesis.tex ```
-> 2) ``` makeglossaries thesis ```
-
 ## PDF/A
 
 Il template è predisposto per la generazione di un file PDF/A-1A. Per le immagini si raccomanda di usare **sempre** un file _jpeg_, in modo da non avere problemi con la trasparenza per la validazione.
 
 Al momento sono presenti due warning:
+
 - **Specification: ISO 19005-1:2005, Clause: 6.8.3.3, Test number: 1**
-    - The logical structure of the conforming file shall be described by a structure hierarchy rooted in the StructTreeRoot entry of the document catalog dictionary, as described in PDF Reference 9.6	Failed
-      
+  - The logical structure of the conforming file shall be described by a structure hierarchy rooted in the StructTreeRoot entry of the document catalog dictionary, as described in PDF Reference 9.6 Failed
+
       1 occurrences
-      
+
       _PDDocument_
-      
+
       _StructTreeRoot_size == 1_
-      
+
       _root/document[0]_
 
 - **Specification: ISO 19005-1:2005, Clause: 6.8.2.2, Test number: 1**
-    - The document catalog dictionary shall include a MarkInfo dictionary with a Marked entry in it, whose value shall be true.	Failed
+  - The document catalog dictionary shall include a MarkInfo dictionary with a Marked entry in it, whose value shall be true. Failed
 
       1 occurrences
-      
+
       _CosDocument_
-      
+
       _Marked == true_
-      
+
       _root_
 
 Appena verrà trovata una soluzione, verrà aggiornato il template.
