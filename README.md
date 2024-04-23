@@ -1,8 +1,8 @@
 # Template Tesi UNIPD
 
 <p align="center">
-  <img width="175" src="rsc/logo_unipd_white.png#gh-dark-mode-only">
-  <img width="175" src="rsc/logo_unipd.png#gh-light-mode-only">
+  <img width="175" src="res/logo_unipd_white.png#gh-dark-mode-only">
+  <img width="175" src="res/logo_unipd.png#gh-light-mode-only">
 </p>
 
 </br>
@@ -10,7 +10,7 @@
 Template realizzato per la stesura della tesi di laurea triennale d'Informatica dell'Università degli Studi di Padova.
 
 > [!IMPORTANT]
-> Questo template è realizzato partendo da quello reso disponibile dal gruppo FIUP all'interno della repository GitHub [Thesis-template](https://github.com/FIUP/Thesis-template).
+> Questo template è realizzato partendo da quello del Gruppo FIUP, reso disponibile all'interno della repository GitHub [Thesis-template](https://github.com/FIUP/Thesis-template).
 
 > [!NOTE]
 > La struttura della tersi è pensata per il Corso di Laurea in Informatica, ma nulla vieta di utilizzarlo, con le oppurtune modifiche, per altri corsi di laurea.
@@ -32,7 +32,7 @@ Rispetto alla versione originale, sono state apportate alcune modifiche, tra cui
 - Aggiunta la Sitografia dedicata;
 - Rimosse le appendici.
 
-Qui puoi vedere un esempio del [PDF generato](rsc/thesis_template.pdf).
+Qui puoi vedere un esempio del [PDF generato](res/thesis_template.pdf).
 
 ## Utilizzo
 
@@ -42,9 +42,7 @@ Dopo aver scaricato la repo, nel percorso [```thesis/files```](https://github.co
 
 > [!TIP]
 > Suggerisco di utilizzare Overleaf, è stato testato e non presenta problemi di compilazione, oltre che semplificare la condivisione del documento (e permette di avere un backup online del proprio lavoro).
-> L'Università di Padova **non** fornisce un account premium per Overleaf, per cui si potrebbe incorrere in problemi di compilazione per documenti di grandi dimensioni.
-
-<br/>
+> L'Università di Padova **non** fornisce un account premium per Overleaf, per cui si potrebbe incorrere in problemi di compilazione per documenti di grandi dimensioni. Se dovesse comparire il warning sulla dimensione del documento, si può risolvere impostando la modalità di compilazione su "Fast [draft]", dove non vengono renderizzate le immagini.
 
 > [!NOTE]
 >

@@ -28,24 +28,6 @@
 \setlength{\headheight}{14.5pt}
 \addtolength{\topmargin}{-2.45pt}
 
-% Listings setup
-\lstset{
-    language=[LaTeX]Tex,%C++,
-    keywordstyle=\color{RoyalBlue}, %\bfseries,
-    basicstyle=\small\ttfamily,
-    %identifierstyle=\color{NavyBlue},
-    commentstyle=\color{Green}\ttfamily,
-    stringstyle=\rmfamily,
-    numbers=none, %left,%
-    numberstyle=\scriptsize, %\tiny
-    stepnumber=5,
-    numbersep=8pt,
-    showstringspaces=false,
-    breaklines=true,
-    frameround=ftff,
-    frame=single
-}
-
 % Add a subscript G to a glossary entry
 \newcommand{\glox}{\textsubscript{\textbf{\textit{G }}}}
 
@@ -105,13 +87,13 @@
 
 % Adds a blank page while increasing the page number
 \newcommand\blankpage{ 
-    \clearpage
+\clearpage
     \begingroup
-      \null
-      \thispagestyle{empty}
-      \hypersetup{pageanchor=false}
-      \clearpage
-    \endgroup
+    \null
+    \thispagestyle{empty}
+    \hypersetup{pageanchor=false}
+    \clearpage
+\endgroup
 }
 
 % Increase page numbering
@@ -128,7 +110,24 @@
     \addcontentsline{toc}{chapter}{\bibname}
     \chapter*{\bibname\markboth{\bibname}{\bibname}}
 }
-\glsaddall
+
+% Code blocks handling w/ table of codes
+\makeatletter
+\ifdefined\NR@chapter
+  \expandafter\@firstoftwo
+\else
+  \expandafter\@secondoftwo
+\fi{\patchcmd\NR@chapter}{\patchcmd\@chapter}
+  {\addtocontents{lot}{\protect\addvspace{10\p@}}}
+  {\addtocontents{lot}{\protect\addvspace{10\p@}}%
+   \addtocontents{lol}{\protect\addvspace{10\p@}}}
+  {}{}
+\makeatother
+
+\renewcommand\listingscaption{Codice}
+\renewcommand\listoflistingscaption{Elenco dei codici sorgenti}
+\counterwithin*{listing}{chapter}
+\renewcommand\thelisting{\thechapter.\arabic{listing}}
 
 % Set up hyperlinks
 \hypersetup{
