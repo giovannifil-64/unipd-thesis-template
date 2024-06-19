@@ -14,6 +14,10 @@ Il template è strutturato nel seguente modo:
 │   ├── 2_processes.tex
 │   └── ...
 │
+├── code/
+│   ├── example.py
+│   └── ...
+│
 ├── config/
 │   ├── packages.tex
 │   ├── thesis_config.tex
@@ -42,6 +46,7 @@ Questi sono i documenti più importanti:
   - `bibliografia.tex`: la struttura automatica della bibliografia. Non è necessario modificare nulla qui
   - `glossary_entries.tex:` dove si inseriscono le definizioni del glossario, seguendo la sintassi dei termini di esempio.
   - `webliography.bib`: dove si inserisce il contenuto effettivo della sitografia. In genere si tratta di link a siti web, articoli online, ecc. È possibile utilizzare lo stesso file di bibliografia, ma è consigliabile tenerli separati per una maggiore chiarezza. Se non si ha bisogno di una sitografia, è rimuovere il riferimento a questo file in `thesis.tex`
+- `code/`: contiene tutti i file di codice che si vogliono includere nella tesi. Si possono importare direttamente nel documento con `\inputminted{python}{code/example.py}`.
 - `config/`
   - `variables.tex`: è il primo file da consultare.
     Definisce tutte le variabili che verranno utilizzate per riempire automaticamente alcuni contenuti del documento, come il titolo, il vostro nome, il vostro professore, ecc.
@@ -66,7 +71,7 @@ Vi si trovano già alcuni capitoli di esempio, che hanno lo scopo di mostrare co
 Utilizzate nomi di file che riflettano il contenuto del capitolo, evitando di chiamarli `capitolo-03.tex`.
 
 > [!IMPORTANT]
-> Quando si creano, si cancellano o si modificano file, è necessario modificarne il riferimento dentro `thesis.tex` per riflettere i cambiamenti.
+> Quando si creano, si cancellano o si modificano file dei capitoli, è necessario aggiornare il file `thesis.tex` per includere i nuovi file o rimuovere i vecchi.
 
 - `latexmkrc`: file di configurazione per latexmk, lo strumento usato per compilare il documento. Non dovrebbe essere necessario modificare nulla qui.
 - `output.xmpdata`: Contiene i metadati della tesi, come titolo, autore, parole chiave ecc. Dovete modificarlo in base alla vostra tesi, non accetta le variabili definite in `config/variables.tex`.

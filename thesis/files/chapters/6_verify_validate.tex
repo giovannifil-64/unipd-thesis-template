@@ -10,22 +10,10 @@
 
 \lipsum[1-2]
 
+% Esempio di come importare un file contenente codice
 Lorem ipsum:
 \begin{listing}[H]
-\begin{minted}{python}
-def recur_fibo(n):
-   if n <= 1:
-       return n
-   else:
-       return(recur_fibo(n-1) + recur_fibo(n-2))
-nterms = 10
-if nterms <= 0:
-   print("Plese enter a positive integer")
-else:
-   print("Fibonacci sequence:")
-   for i in range(nterms):
-       print(recur_fibo(i))
-\end{minted}
+\inputminted{python}{code/example.py}
 \caption{Fibonacci recursive}
 \label{listing:py_fibo}
 \end{listing}

@@ -34,6 +34,9 @@ Rispetto alla versione originale, sono state apportate alcune modifiche, tra cui
 
 Qui puoi vedere un esempio del [PDF generato](res/thesis_template.pdf).
 
+> [!NOTE]
+> Se devi stampare la tesi, assicurati di rimuovere il colore dal documento decommentando la riga `\hypersetup{draft}` in `config/thesis_config.tex`, in modo da rimuovere i link e il colore dai riferimenti.
+
 ## Utilizzo
 
 Dopo aver scaricato la repo, nel percorso [```thesis/files```](https://github.com/giovannifil-64/unipd-thesis-template/tree/main/thesis/files) troverete i file in LaTeX della tesi. Per copiarla su Overleaf va compressa la cartella ```files``` e caricare il file ```.zip``` ottenuto.
@@ -46,11 +49,16 @@ Dopo aver scaricato la repo, nel percorso [```thesis/files```](https://github.co
 
 > [!NOTE]
 >
-> - Per far apparire il Glossario e la lista degli Acronimi e abbreviazioni occorre citare almeno un termine con ```\gls{termineg}``` (dove ```g``` è una convenzione interna). Questo farà apparire il termine in forma estesa, ad esempio ```\gls{sdkg}``` apparirà come "_Software Development Kit_".
-> - Per far anche apparire la sigla, occorre utilizzare ```\gls{termine}```, quindi non con la ```g```. Ad esempio ```\gls{sdk}``` apparirà come "_Software Development Kit (SDK)_".
-> - Per inserire una g a pedice, occorre utilizzare ```\gls{termineg}\glox```, in questo modo apparirà come "_Software Development Kit<sub>g</sub>_".
-> In caso vi sia la presenza di un carattere dopo la g, come un punto o una virgola, occorre utilizzare ```\gls{termineg}\glox\gloxspacing```, in questo modo vi sarà il giusto spazio tra la g a pedice e il carattere.
-> - Per inserire un termine nel Glossario, bisogna aggiungere la voce nel file ```references/glossary_acronyms.tex```, seguendo la struttura già presente.
+> - Per far apparire il Glossario e la lista degli Acronimi e abbreviazioni occorre citare almeno un termine all'interno del documento. Per farlo si può utilizzare la sintassi ```\gls{termine}```.
+> Ad esempio:
+> ```latex
+> Lorem \gls{sdkg} ispum dolor
+> ```
+> il termine apparirà come "_Software Development Kit (SDK)<sub>G</sub>_".
+> Nei successivi utilizzi, il termine apparirà come "_Software Development Kit<sub>G</sub>_".
+> se invece si vuole che il termine appaia sempre con la sigla, si può utilizzare la sintassi ```\gls{sdkg}``` (l'utilizzo di g è una convenzione per indicare che il termine è un acronimo).
+> Per inserire un termine nel Glossario, bisogna aggiungere la voce nel file ```references/glossary_acronyms.tex```, seguendo la struttura già presente.
+>
 > In caso di dubbi, si può consultare il Capitolo 7 di questo template, che mostra alcuni esempi di utilizzo.
 
 ### latexmk
@@ -61,7 +69,7 @@ Successivamente, è possibile compilare il documento tramite il comando `latexmk
 
 ## PDF/A
 
-Il template è predisposto per la generazione di un file PDF/A-1A. Per le immagini si raccomanda di usare **sempre** un file _jpeg_, in modo da non avere problemi con la trasparenza per la validazione.
+Il template è predisposto per la generazione di un file PDF/A-1A. Per le immagini si raccomanda di usare **sempre** un file _jpeg_ o _jpg_, in modo da non avere problemi con la trasparenza per la validazione.
 
 Al momento sono presenti due warning:
 
