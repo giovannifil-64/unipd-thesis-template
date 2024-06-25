@@ -39,9 +39,25 @@ Qui puoi vedere un esempio del [PDF generato](res/thesis_template.pdf).
 
 ## Utilizzo
 
-Dopo aver scaricato la repo, nel percorso [```thesis/files```](https://github.com/giovannifil-64/unipd-thesis-template/tree/main/thesis/files) troverete i file in LaTeX della tesi. Per copiarla su Overleaf va compressa la cartella ```files``` e caricare il file ```.zip``` ottenuto.
+Dopo aver scaricato la repo, nel percorso [```thesis/files```](https://github.com/giovannifil-64/unipd-thesis-template/tree/main/thesis/files) troverete i file in LaTeX della tesi. Per utilizzarla su Overleaf va compressa la cartella ```files``` e caricate lo ```.zip``` ottenuto.
 
-È altresì possibile utilizzare il template con un qualsiasi editor di testo, ma in questo caso è necessario installare una distribuzione TeX, come ad esempio [TeX Live](https://www.tug.org/texlive/).
+È altresì possibile utilizzare il template con un qualsiasi editor di testo, ma in questo caso è necessario installare una distribuzione TeX, come [TeX Live](https://www.tug.org/texlive/), installando tutti i pacchetti, o selezionando a mano i quelli da installare partendo dal file ```packages.tex```.
+
+Su sistemi UNIX/Linux, è possibile installare i pacchetti necessari con il comando:
+
+```bash
+sudo sudo apt install texlive-full
+```
+
+> [!IMPORTANT]
+> Le seguenti istruzioni sono state testate su TeXstudio
+> Una volta installato tutto sulla macchina, eseguite i seguenti passaggi per compilare il documento:
+>
+> 1) Se avete file in python, dovete installare Pygment con pip. In caso di ambienti gestiti esternamente usare ```sudo apt install python3-pygments```
+> 2) impostare --shell-escape per la compilazione ([Qui viene spiegato come fare](https://tex.stackexchange.com/a/99476/279981))
+> 3) forzare biber come compiler della bibliografia ([Qui viene spiegato come fare](https://tex.stackexchange.com/a/429968/279981))
+>
+> Se i riferimenti, bibliografia etc. non dovessero comparire, provate a cancellare i file generati e ricompilare. Tutte le volte che è comparso il problema si è risolto in questo modo.
 
 > [!TIP]
 > Suggerisco di utilizzare Overleaf, è stato testato e non presenta problemi di compilazione, oltre che semplificare la condivisione del documento (e permette di avere un backup online del proprio lavoro).
@@ -49,7 +65,7 @@ Dopo aver scaricato la repo, nel percorso [```thesis/files```](https://github.co
 
 > [!NOTE]
 >
-> - Per far apparire il Glossario e la lista degli Acronimi e abbreviazioni occorre citare almeno un termine all'interno del documento. Per farlo si può utilizzare la sintassi ```\gls{termine}```.
+> Per far apparire il Glossario e la lista degli Acronimi e abbreviazioni occorre citare almeno un termine all'interno del documento. Per farlo si può utilizzare la sintassi ```\gls{termine}```.
 > Ad esempio:
 > ```latex
 > Lorem \gls{sdkg} ispum dolor
