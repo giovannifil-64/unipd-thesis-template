@@ -46,7 +46,7 @@ Dopo aver scaricato la repo, nel percorso [```thesis/files```](https://github.co
 Su sistemi UNIX/Linux, è possibile installare i pacchetti necessari con il comando:
 
 ```bash
-sudo sudo apt install texlive-full
+sudo apt install texlive-full
 ```
 
 > [!IMPORTANT]
