@@ -13,7 +13,7 @@ Template realizzato per la stesura della tesi di laurea triennale d'Informatica 
 > Questo template è realizzato partendo da quello del Gruppo FIUP, reso disponibile all'interno della repository GitHub [Thesis-template](https://github.com/FIUP/Thesis-template).
 
 > [!NOTE]
-> La struttura della tersi è pensata per il Corso di Laurea in Informatica, ma nulla vieta di utilizzarlo, con le oppurtune modifiche, per altri corsi di laurea.
+> La struttura della tesi è pensata per il Corso di Laurea in Informatica, ma nulla vieta di utilizzarlo, con le oppurtune modifiche, per altri corsi di laurea.
 
 > [!WARNING]
 > Si può contribuire al miglioramento costante del template, segnalando eventuali errori o suggerendo modifiche, tramite l'apertura di una issue e/o pull request, ma si prega di non caricare direttamente il template contenete i file generati dalla compilazione o con la vostra tesi.
