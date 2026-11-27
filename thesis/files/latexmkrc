@@ -1,1 +1,20 @@
-$ENV{'TZ'}='Europe/Rome'
+# Fuso orario fisso: le date dei metadati PDF/A (Info e XMP) devono coincidere
+$ENV{'TZ'} = 'Europe/Rome';
+
+# File da compilare (senza questo, latexmk compila tutti i .tex della cartella)
+@default_files = ('thesis.tex');
+
+# pdfx legge i metadati (titolo, autore, parole chiave) da <jobname>.xmpdata.
+# Overleaf compila sempre con -jobname=output, ed è per questo che il file si chiama output.xmpdata:
+# forzare lo stesso nome in locale rende la compilazione identica ovunque.
+# Di conseguenza il PDF prodotto da latexmk si chiama output.pdf (build.sh lo copia con un nome più sensato).
+$jobname = 'output';
+
+$pdf_mode   = 1;   # pdfLaTeX
+$bibtex_use = 2;   # biber (biblatex)
+
+# minted e glossaries (automake) richiedono --shell-escape
+$pdflatex = 'pdflatex -shell-escape -interaction=nonstopmode -file-line-error %O %S';
+
+# Estensioni prodotte da glossaries/biblatex che "latexmk -c" non conosce
+$clean_ext = 'acn acr alg bbl glg glo gls ist lol run.xml';

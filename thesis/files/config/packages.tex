@@ -1,38 +1,55 @@
 \PassOptionsToPackage{dvipsnames}{xcolor} % colori PDF/A
 
+% setspace e footmisc vanno caricati PRIMA di pdfx (che carica hyperref): caricati dopo ridefiniscono \@footnotetext
+% e i collegamenti delle note a piè di pagina perdono la destinazione ("Hfootnote.N has been referenced but does not exist").
+% setspace: nessun suo comando è usato nel testo, ma insieme a \linespread rende compatti float e didascalie
+% (toglierlo cambia l'impaginazione). footmisc[bottom]: le note stanno sempre in fondo alla pagina.
+\usepackage{setspace}
+\usepackage[bottom]{footmisc}
+
+% xcolor va caricato prima di pdfx: se lo carica pdfx stesso, gli passa un'opzione (hyperref) ormai obsoleta e xcolor emette un avviso.
+\usepackage[rgb]{xcolor}
+% pdfx segnala sempre, con un avviso solo informativo, che i colori sono impostati in RGB (come richiede il PDF/A):
+% il filtro nasconde solo questo messaggio.
+\usepackage{silence}
+\WarningFilter{pdfx}{Setting all color commands}
 \usepackage{colorprofiles}
-% PDF/A
-% validate in https://www.pdf-online.com/osa/validate.aspx
-\usepackage[a-1a,mathxmp]{pdfx}[2018/12/22]
+% PDF/A-1b (ISO 19005-1, livello di conformità B). È il livello che pdfLaTeX riesce davvero a soddisfare:
+% il livello "a" (a-1a) richiede un PDF con tag di struttura, che pdfLaTeX non sa produrre, e dichiararlo senza
+% esserlo fa fallire la validazione (regole 6.8.2.2 e 6.8.3.3). L'Ateneo richiede genericamente un "PDF/A".
+% Con PDF/A-1 le immagini non possono avere trasparenza (PNG con canale alpha): usare JPEG o PNG senza alpha.
+% Verifica: ./build.sh check (veraPDF) oppure https://www.pdf-online.com/osa/validate.aspx
+\usepackage[a-1b,mathxmp]{pdfx}[2018/12/22]
+% pdfx carica già hyperref (con l'opzione pdfa): non va ricaricato qui.
 \usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
+\usepackage{lmodern}
 \usepackage{bookmark}
 \usepackage{caption}
-\usepackage{comment}
-\usepackage{chngpage, calc} % centra il frontespizio
-\usepackage{emptypage} % pagine vuote senza testatina e piede di pagina
-\usepackage{epigraph} % per epigrafi
+\usepackage{calc}
+\usepackage{emptypage} % pagine vuote senza testatina e piè di pagina
 \usepackage{indentfirst} % rientra il primo paragrafo di ogni sezione
 \usepackage{graphicx} % immagini
-\usepackage[pdfa]{hyperref} % collegamenti ipertestuali
-\usepackage{mparhack,relsize}  % finezze tipografiche
-\usepackage{nameref} % visualizza nome dei riferimenti
-\usepackage[font=small]{quoting} % citazioni
-\usepackage{subfig} % sottofigure, sottotabelle
-\usepackage[italian]{varioref} % riferimenti completi della pagina
 \usepackage{longtable} % tabelle su più pagine
+% glossaries carica datatool, che non ha il supporto per l'italiano: tracklang emetterebbe un avviso inutile
+\usepackage{tracklang}
+\ifdefined\TrackLangShowWarningsfalse\TrackLangShowWarningsfalse\fi
 \usepackage[toc, acronym, automake]{glossaries}
 \usepackage[backend=biber, style=verbose-ibid, hyperref, backref]{biblatex}
-\usepackage{lmodern}
 \usepackage[top=2.75cm, bottom=2.75cm, right=3cm, left=3.75cm]{geometry} % 1in+17pt+0.6cm
 \usepackage{fancyhdr}
-\usepackage{lipsum}
-\usepackage{setspace}
+\usepackage{lipsum} % testo segnaposto: da togliere quando si scrive la tesi vera
 \usepackage{titlesec}
+% float fornisce la posizione [H] di figure e listati: prima arrivava per caso da minted.
+% Va caricato qui, subito prima di minted: caricato prima cambia l'aspetto dei listati.
+\usepackage{float}
 \usepackage[cachedir=minted-caches]{minted} % https://it.overleaf.com/learn/latex/Code_Highlighting_with_minted
-\usepackage{xcolor}
 \usepackage{csquotes} % gestisce automaticamente i caratteri (")
 \usepackage{etoolbox}
-\usepackage[bottom]{footmisc}
-\usepackage{zref-totpages}
+
+% Pacchetti facoltativi, non usati dal template: decommentare se servono.
+% \usepackage{microtype}  % rifinitura tipografica (margini, spaziature): più lento da compilare e cambia l'impaginazione
+% \usepackage{subcaption}  % sottofigure e sottotabelle (sostituisce il vecchio subfig)
+% \usepackage{amsmath, amssymb, amsthm} % matematica avanzata
+% \usepackage{booktabs}    % filetti professionali nelle tabelle
+% \usepackage{comment}     % ambiente comment per escludere blocchi di testo
