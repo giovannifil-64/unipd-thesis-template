@@ -1,0 +1,14 @@
+# Normalizza i fine riga: su Windows (core.autocrlf) uno script con CRLF non parte in WSL/Git Bash
+* text=auto
+*.sh text eol=lf
+*.ps1 text eol=crlf
+*.tex text eol=lf
+*.bib text eol=lf
+*.xmpdata text eol=lf
+latexmkrc text eol=lf
+
+# File binari
+*.pdf binary
+*.jpg binary
+*.jpeg binary
+*.png binary

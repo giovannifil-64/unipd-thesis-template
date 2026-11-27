@@ -1,19 +1,41 @@
 .DS_Store
-.xmpi
-.acn
-.aux
-.bbl
-.bcf
-.blg
-.fdb_latexmk
-.fls
-.glo
-.glsdefs
-.ist
-.lof
-.log
-.lot
-.pdf
-.run.xml
-.synctex.gz
-.toc
+
+# Cartella di lavoro e PDF prodotti da build.sh
+/build/
+/thesis.pdf
+
+# File generati dalla compilazione LaTeX
+*.acn
+*.acr
+*.alg
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.ist
+*.lof
+*.log
+*.lol
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xmpi
+
+# Cache di minted per i listati di codice
+minted-caches/
+_minted*/
+_*.minted
+
+# PDF compilati dentro la cartella dei sorgenti (il PDF di esempio in res/ resta tracciato)
+thesis/files/*.pdf
+
+# Archivi creati per caricare il progetto su Overleaf
+*.zip
